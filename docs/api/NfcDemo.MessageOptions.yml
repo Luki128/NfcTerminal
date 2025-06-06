@@ -1,0 +1,500 @@
+### YamlMime:ManagedReference
+items:
+- uid: NfcDemo.MessageOptions
+  commentId: T:NfcDemo.MessageOptions
+  id: MessageOptions
+  parent: NfcDemo
+  children:
+  - NfcDemo.MessageOptions.#ctor(System.Object,System.String,System.ValueTuple{System.String,System.Action{System.Object}}[])
+  - NfcDemo.MessageOptions.Invoke(Microsoft.Maui.Controls.Page)
+  langs:
+  - csharp
+  - vb
+  name: MessageOptions
+  nameWithType: MessageOptions
+  fullName: NfcDemo.MessageOptions
+  type: Class
+  source:
+    id: MessageOptions
+    path: C:\Users\KubaLocal\Documents\Projekty\NFC_test\NfcDemo\TerminalPage.xaml.cs
+    startLine: 8
+  assemblies:
+  - NfcTerminal
+  namespace: NfcDemo
+  summary: Represents a set of context-specific options presented to the user via an action sheet.
+  example: []
+  syntax:
+    content: public class MessageOptions
+    content.vb: Public Class MessageOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: NfcDemo.MessageOptions.#ctor(System.Object,System.String,System.ValueTuple{System.String,System.Action{System.Object}}[])
+  commentId: M:NfcDemo.MessageOptions.#ctor(System.Object,System.String,System.ValueTuple{System.String,System.Action{System.Object}}[])
+  id: '#ctor(System.Object,System.String,System.ValueTuple{System.String,System.Action{System.Object}}[])'
+  parent: NfcDemo.MessageOptions
+  langs:
+  - csharp
+  - vb
+  name: MessageOptions(object, string, params (string option, Action<object> callback)[])
+  nameWithType: MessageOptions.MessageOptions(object, string, params (string option, Action<object> callback)[])
+  fullName: NfcDemo.MessageOptions.MessageOptions(object, string, params (string option, System.Action<object> callback)[])
+  type: Constructor
+  source:
+    id: .ctor
+    path: C:\Users\KubaLocal\Documents\Projekty\NFC_test\NfcDemo\TerminalPage.xaml.cs
+    startLine: 22
+  assemblies:
+  - NfcTerminal
+  namespace: NfcDemo
+  summary: Initializes a new instance of the <xref href="NfcDemo.MessageOptions" data-throw-if-not-resolved="false"></xref> class with the specified context, message, and options.
+  example: []
+  syntax:
+    content: public MessageOptions(object context, string msg, params (string option, Action<object> callback)[] options)
+    parameters:
+    - id: context
+      type: System.Object
+      description: An arbitrary object passed to each option's callback when invoked.
+    - id: msg
+      type: System.String
+      description: The base message text displayed or truncated in the action sheet title.
+    - id: options
+      type: System.ValueTuple{System.String,System.Action{System.Object}}[]
+      description: A list of tuples, each containing an option label and a callback action taking the <code class="paramref">context</code> as a parameter.
+    content.vb: Public Sub New(context As Object, msg As String, ParamArray options As ([option] As String, callback As Action(Of Object))())
+  overload: NfcDemo.MessageOptions.#ctor*
+  nameWithType.vb: MessageOptions.New(Object, String, ParamArray (option As String, callback As Action(Of Object))())
+  fullName.vb: NfcDemo.MessageOptions.New(Object, String, ParamArray (option As String, callback As System.Action(Of Object))())
+  name.vb: New(Object, String, ParamArray (option As String, callback As Action(Of Object))())
+- uid: NfcDemo.MessageOptions.Invoke(Microsoft.Maui.Controls.Page)
+  commentId: M:NfcDemo.MessageOptions.Invoke(Microsoft.Maui.Controls.Page)
+  id: Invoke(Microsoft.Maui.Controls.Page)
+  parent: NfcDemo.MessageOptions
+  langs:
+  - csharp
+  - vb
+  name: Invoke(Page)
+  nameWithType: MessageOptions.Invoke(Page)
+  fullName: NfcDemo.MessageOptions.Invoke(Microsoft.Maui.Controls.Page)
+  type: Method
+  source:
+    id: Invoke
+    path: C:\Users\KubaLocal\Documents\Projekty\NFC_test\NfcDemo\TerminalPage.xaml.cs
+    startLine: 51
+  assemblies:
+  - NfcTerminal
+  namespace: NfcDemo
+  summary: >-
+    Displays an action sheet on the specified <xref href="Microsoft.Maui.Controls.Page" data-throw-if-not-resolved="false"></xref> with the defined options.
+
+    When the user selects an option, invokes the corresponding callback with the provided context.
+  example: []
+  syntax:
+    content: public void Invoke(Page page)
+    parameters:
+    - id: page
+      type: Microsoft.Maui.Controls.Page
+      description: The <xref href="Microsoft.Maui.Controls.Page" data-throw-if-not-resolved="false"></xref> on which to display the action sheet.
+    content.vb: Public Sub Invoke(page As Page)
+  overload: NfcDemo.MessageOptions.Invoke*
+references:
+- uid: NfcDemo
+  commentId: N:NfcDemo
+  href: NfcDemo.html
+  name: NfcDemo
+  nameWithType: NfcDemo
+  fullName: NfcDemo
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: NfcDemo.MessageOptions
+  commentId: T:NfcDemo.MessageOptions
+  href: NfcDemo.MessageOptions.html
+  name: MessageOptions
+  nameWithType: MessageOptions
+  fullName: NfcDemo.MessageOptions
+- uid: NfcDemo.MessageOptions.#ctor*
+  commentId: Overload:NfcDemo.MessageOptions.#ctor
+  href: NfcDemo.MessageOptions.html#NfcDemo_MessageOptions__ctor_System_Object_System_String_System_ValueTuple_System_String_System_Action_System_Object_____
+  name: MessageOptions
+  nameWithType: MessageOptions.MessageOptions
+  fullName: NfcDemo.MessageOptions.MessageOptions
+  nameWithType.vb: MessageOptions.New
+  fullName.vb: NfcDemo.MessageOptions.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueTuple{System.String,System.Action{System.Object}}[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: (string option, Action<object> callback)[]
+  nameWithType: (string option, Action<object> callback)[]
+  fullName: (string option, System.Action<object> callback)[]
+  nameWithType.vb: (option As String, callback As Action(Of Object))()
+  fullName.vb: (option As String, callback As System.Action(Of Object))()
+  name.vb: (option As String, callback As Action(Of Object))()
+  spec.csharp:
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Action{System.Object}}.option
+    name: option
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.action-system.object--.option
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Action{System.Object}}.callback
+    name: callback
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.action-system.object--.callback
+  - name: )
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.String,System.Action{System.Object}}.option
+    name: option
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.action-system.object--.option
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.Action{System.Object}}.callback
+    name: callback
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.action-system.object--.callback
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+  - name: (
+  - name: )
+- uid: Microsoft.Maui.Controls.Page
+  commentId: T:Microsoft.Maui.Controls.Page
+  parent: Microsoft.Maui.Controls
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.page
+  name: Page
+  nameWithType: Page
+  fullName: Microsoft.Maui.Controls.Page
+- uid: NfcDemo.MessageOptions.Invoke*
+  commentId: Overload:NfcDemo.MessageOptions.Invoke
+  href: NfcDemo.MessageOptions.html#NfcDemo_MessageOptions_Invoke_Microsoft_Maui_Controls_Page_
+  name: Invoke
+  nameWithType: MessageOptions.Invoke
+  fullName: NfcDemo.MessageOptions.Invoke
+- uid: Microsoft.Maui.Controls
+  commentId: N:Microsoft.Maui.Controls
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Maui.Controls
+  nameWithType: Microsoft.Maui.Controls
+  fullName: Microsoft.Maui.Controls
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Controls
+    name: Controls
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.controls
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Controls
+    name: Controls
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.controls

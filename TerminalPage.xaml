@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="NfcDemo.TerminalPage"
+             Title="APDU Terminal">
+    <Grid RowDefinitions="*,Auto" Padding="12">
+        <!-- 90 % output area -->
+        <ScrollView x:Name="OutputScroll" Grid.Row="0" Padding="0,0,0,4">
+
+            <Grid RowDefinitions="*,Auto">
+                <!-- 1 -->
+                <BoxView Grid.Row="0" Color="Transparent" />
+                <!-- 2 -->
+                <VerticalStackLayout x:Name="OutputStack" Grid.Row="1" Spacing="0"/>
+                <!-- 3 -->
+            </Grid>
+        </ScrollView>
+        <!-- command entry docked to bottom -->
+        <Grid Grid.Row="1" ColumnDefinitions="*,Auto" Margin="0,8,0,0">
+            <Entry x:Name="Input" Text="00 A4 04 00 0E 32 50 41 59 2E 53 59 53 2E 44 44 46 30 31 00" Placeholder="Enter APDU …"
+        FontFamily="Consolas" ClearButtonVisibility="WhileEditing" />
+            <Button Text="Send" Grid.Column="1" Clicked="OnSendClicked" />
+        </Grid>
+    </Grid>
+</ContentPage>

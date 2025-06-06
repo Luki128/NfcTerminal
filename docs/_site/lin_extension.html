@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | NfcTerminal </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | NfcTerminal ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="NfcTerminal">
+            NfcTerminal
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<h2 id="linextension-api">LinExtension API</h2>
+<h3 id="overview">Overview</h3>
+<p><code>LinExtension</code> registers a set of helper functions into the Lin interpreter, providing:</p>
+<ul>
+<li>Basic I/O (<code>print</code>, <code>error</code>, <code>printc</code>)</li>
+<li>Numeric and string conversions (<code>num</code>, <code>hex</code>, <code>ascii</code>)</li>
+<li>Substring and search utilities (<code>substr</code>, <code>replace</code>, <code>find</code>)</li>
+<li>Byte-level slicing (<code>bytes</code>)</li>
+<li>NFC/Smartcard APDU transmission (<code>apdu</code>)</li>
+<li>TLV parsing and navigation (<code>tlv</code>, <code>tree</code>, <code>tlv_read</code>)</li>
+</ul>
+<p>Below you’ll find a description of each function, its parameters, return value, and a simple usage example. (Note: internal argument validation logic is not detailed here.)</p>
+<hr>
+<h2 id="1-print">1. <code>print</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">print(arg1, arg2, ..., argN)
+</code></pre>
+<p><strong>Description:</strong>
+Prints any number of arguments to the console in plain white text. Each argument is converted to its string representation (via <code>ToString()</code>) and joined with commas.</p>
+<ul>
+<li><p><strong>Parameters:</strong>
+− <code>arg1, arg2, ..., argN</code> (any type)</p>
+</li>
+<li><p><strong>Return Value:</strong>
+Returns <code>null</code> (purely an output operation).</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">print(&quot;Result is&quot;, 123, myVariable)
+</code></pre>
+<p>Output in console (white text):</p>
+<pre><code>Result is,123,&lt;value of myVariable&gt;
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="2-error">2. <code>error</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">error(arg1, arg2, ..., argN)
+</code></pre>
+<p><strong>Description:</strong>
+Similar to <code>print</code>, but displays the message in violet (error color) and then throws an exception (<code>Exception</code>) with the same joined text. Useful for signaling an error from within a Lin script.</p>
+<ul>
+<li><p><strong>Parameters:</strong>
+− <code>arg1, arg2, ..., argN</code> (any type)</p>
+</li>
+<li><p><strong>Return Value:</strong>
+Does not return normally—throws an exception immediately after printing.</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">if (someConditionFailed) {
+    error(&quot;Something went wrong:&quot;, errorCode)
+}
+</code></pre>
+<p>Output in console (violet text):</p>
+<pre><code>Something went wrong:,&lt;errorCode&gt;
+</code></pre>
+<p>Then execution halts with an exception carrying that message.</p>
+</li>
+</ul>
+<hr>
+<h2 id="3-printc">3. <code>printc</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">printc(colorHexString, arg1, arg2, ..., argN)
+</code></pre>
+<p><strong>Description:</strong>
+Prints all arguments (from the second onward) in a custom color specified by the first argument (hex format, e.g. <code>&quot;#FF0000&quot;</code>). The first argument is treated as a hex color string, then the rest are joined with commas and drawn in that color.</p>
+<ul>
+<li><p><strong>Parameters:</strong></p>
+<ol>
+<li><code>colorHexString</code> (string) – e.g. <code>&quot;#00FF00&quot;</code>, <code>&quot;FFAA00&quot;</code>, etc.</li>
+<li><code>arg1, arg2, ..., argN</code> (any type) – values to print in that color.</li>
+</ol>
+</li>
+<li><p><strong>Return Value:</strong>
+Returns <code>null</code> (purely an output operation).</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">printc(&quot;#FF00FF&quot;, &quot;Status&quot;, 200, &quot;OK&quot;)
+</code></pre>
+<p>Output (magenta color):</p>
+<pre><code>Status,200,OK
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="4-apdu">4. <code>apdu</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">apdu(hexString)
+</code></pre>
+<p><strong>Description:</strong>
+Sends an APDU command over NFC (using the provided <code>INfcService</code> instance). Accepts a hex string, transmits it to the card, waits for the response, and then splits the response into “data” and Status Word (<code>SW</code>). Returns a formatted string:</p>
+<pre><code>[SW]\t[DATA]
+SW - 4-digit hex status word
+DATA - response data in bytes hex with hyphens
+</code></pre>
+<p><strong>Important:</strong></p>
+<ul>
+<li><p>If no NFC listener or card connection is available (for example, if the card is not present, NFC was never initialized or connected, or the card got disconnected), a <code>NullReferenceException</code> or related error may be thrown. In such cases, you should catch the exception (or check that NFC is connected) before calling <code>apdu</code>.</p>
+</li>
+<li><p><strong>Example error conditions:</strong></p>
+<ol>
+<li><strong>Card not present:</strong> NFC transceive will fail or return an empty response—handle by checking for <code>null</code> or catching a <code>NullReferenceException</code>.</li>
+<li><strong>NFC service not initialized / never connected:</strong> Attempting to call <code>nfc.TransceiveAsync(...)</code> on a <code>null</code> service object will cause a <code>NullReferenceException</code>.</li>
+<li><strong>Card disconnected mid-execution:</strong> The <code>Task</code> launched for <code>TransceiveAsync</code> may throw an exception or return incomplete data—catch exceptions and verify response length.</li>
+</ol>
+</li>
+<li><p><strong>Parameters:</strong>
+− <code>hexString</code> (string) – ASCII‐hex representation of the APDU (e.g. <code>&quot;00A404000E315041592E5359532E4444463031&quot;</code>).</p>
+</li>
+<li><p><strong>Return Value:</strong>
+<code>string</code> formatted as:</p>
+<pre><code>9000\t6F-23-84-0E-A0-00-00-00-03-10-10-...
+</code></pre>
+<p>where <code>&quot;9000&quot;</code> is the SW (status word) and the bytes after the tab are the data payload in hyphenated hex form.</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">response = apdu(&quot;00A404000E315041592E5359532E4444463031&quot;)
+print(&quot;Card says:&quot;, response)
+</code></pre>
+<p>Possible <code>response</code>:</p>
+<pre><code>9000\t6F-23-84-0E-A0-00-00-00-03-10-10-A0-00-00-00-62-03-01-0C-01-02
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="5-num">5. <code>num</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">num(stringNumber [, base])
+</code></pre>
+<p><strong>Description:</strong>
+Converts a string representing a number into a 64-bit integer (<code>Int64</code>). If only one parameter is given, the default base is 10. If two parameters are supplied, the second must be an integer indicating the radix (e.g. 2, 8, 10, 16).</p>
+<ul>
+<li><p><strong>Parameters:</strong></p>
+<ol>
+<li><code>stringNumber</code> (string) – e.g. <code>&quot;FF&quot;</code>, <code>&quot;1011&quot;</code>, <code>&quot;123&quot;</code>.</li>
+<li><code>base</code> (integer, optional) – the numeric base (e.g. <code>2</code> for binary, <code>16</code> for hex). Defaults to <code>10</code> if omitted.</li>
+</ol>
+</li>
+<li><p><strong>Return Value:</strong>
+<code>Int64</code> (the parsed integer value).</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">var x = num(&quot;1011&quot;, 2)   
+// x == 11
+var y = num(&quot;FF&quot;, 16)    
+// y == 255
+var z = num(&quot;42&quot;)        
+// z == 42 (default base 10)
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="6-hex">6. <code>hex</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">hex(value [, padString])
+</code></pre>
+<p><strong>Description:</strong>
+Works in two modes:</p>
+<ol>
+<li><p><strong><code>value</code></strong>** is a number (Int64):**
+Converts the integer to an uppercase hex string (no leading “0x”). If <code>padString</code> is provided (a string, e.g. <code>&quot;4&quot;</code>), it specifies the minimum width (number of hex digits) and pads with leading zeros as needed.</p>
+</li>
+<li><p><strong><code>value</code></strong>** is a string:**
+Converts each character of the input string to its ASCII byte, then outputs a space-separated hex representation for each byte.</p>
+</li>
+</ol>
+<ul>
+<li><p><strong>Parameters:</strong></p>
+<ol>
+<li><code>value</code> – either a numeric type (Int64) or a <code>string</code>.</li>
+<li><code>padString</code> (string, optional) – when <code>value</code> is numeric, this defines the minimum field width (e.g. <code>&quot;4&quot;</code> → at least 4 hex digits; <code>&quot;2&quot;</code> → at least 2 hex digits).</li>
+</ol>
+</li>
+<li><p><strong>Return Value:</strong>
+<code>string</code> (hexadecimal representation).</p>
+</li>
+<li><p><strong>Examples:</strong></p>
+<pre><code class="lang-lin">// Number → hex
+hex(255)        
+// &quot;FF&quot;
+hex(255, &quot;4&quot;)   
+// &quot;00FF&quot;
+hex(16, &quot;2&quot;)    
+// &quot;10&quot;
+hex(16, &quot;4&quot;)    
+// &quot;0010&quot;
+
+// String → ASCII hex
+hex(&quot;ABC&quot;)      
+// &quot;41 42 43&quot;
+hex(&quot;Hi!&quot;)      
+// &quot;48 69 21&quot;
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="7-ascii">7. <code>ascii</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">ascii(hexString)
+</code></pre>
+<p><strong>Description:</strong>
+Takes a hex-encoded string (possibly containing spaces or hyphens) and decodes it into its ASCII text equivalent. Each pair of hex digits is treated as one byte and translated to its ASCII character.</p>
+<ul>
+<li><p><strong>Parameters:</strong>
+− <code>hexString</code> (string) – e.g. <code>&quot;48656C6C6F&quot;</code>, <code>&quot;48 65 6C 6C 6F&quot;</code>, or <code>&quot;48-65-6C-6C-6F&quot;</code>.</p>
+</li>
+<li><p><strong>Return Value:</strong>
+<code>string</code> (decoded ASCII text).</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">var text = ascii(&quot;48656C6C6F&quot;) 
+// &quot;Hello&quot;
+var name = ascii(&quot;4A-6F-68-6E&quot;)    
+// &quot;John&quot;
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="8-substr">8. <code>substr</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">substr(sourceString, beginIndex, length)
+</code></pre>
+<p><strong>Description:</strong>
+Extracts a substring from the given <code>sourceString</code>, starting at <code>beginIndex</code> (zero-based), and of the specified <code>length</code>. This mirrors C#’s <code>String.Substring</code>.</p>
+<ul>
+<li><p><strong>Parameters:</strong></p>
+<ol>
+<li><code>sourceString</code> (string) – the original text.</li>
+<li><code>beginIndex</code> (integer) – zero-based starting position.</li>
+<li><code>length</code> (integer) – number of characters to extract.</li>
+</ol>
+</li>
+<li><p><strong>Return Value:</strong>
+<code>string</code> (the extracted substring).</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">substr(&quot;ABCDEFG&quot;, 2, 3)         
+// &quot;CDE&quot;
+substr(&quot;Hello, world&quot;, 7, 5)    
+// &quot;world&quot;
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="9-replace">9. <code>replace</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">replace(sourceString, oldValue, newValue)
+</code></pre>
+<p><strong>Description:</strong>
+Replaces <strong>all</strong> occurrences of <code>oldValue</code> in <code>sourceString</code> with <code>newValue</code>. Equivalent to C#’s <code>String.Replace</code>.</p>
+<ul>
+<li><p><strong>Parameters:</strong></p>
+<ol>
+<li><code>sourceString</code> (string) – original text.</li>
+<li><code>oldValue</code> (string) – substring to be replaced.</li>
+<li><code>newValue</code> (string) – replacement substring.</li>
+</ol>
+</li>
+<li><p><strong>Return Value:</strong>
+<code>string</code> (result after substitution).</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">replace(&quot;abracadabra&quot;, &quot;a&quot;, &quot;o&quot;)    
+// &quot;obrocodobro&quot;
+replace(&quot;2025-06-06&quot;, &quot;-&quot;, &quot;/&quot;)     
+// &quot;2025/06/06&quot;
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="10-find">10. <code>find</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">find(sourceString, searchString)
+</code></pre>
+<p><strong>Description:</strong>
+Returns the zero-based index of the first occurrence of <code>searchString</code> inside <code>sourceString</code>. If not found, returns <code>-1</code>. Corresponds to C#’s <code>String.IndexOf</code>.</p>
+<ul>
+<li><p><strong>Parameters:</strong></p>
+<ol>
+<li><code>sourceString</code> (string) – text to search in.</li>
+<li><code>searchString</code> (string) – text to search for.</li>
+</ol>
+</li>
+<li><p><strong>Return Value:</strong>
+<code>Int32</code> (index of first match, or <code>-1</code> if none).</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">find(&quot;linextension&quot;, &quot;ext&quot;)    
+// 3
+find(&quot;linextension&quot;, &quot;xyz&quot;)    
+// -1
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="11-bytes">11. <code>bytes</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">bytes(hexString, startIndex [, count])
+</code></pre>
+<p><strong>Description:</strong>
+Takes a hex-encoded string (possibly with spaces or hyphens), cleans it to a contiguous hex stream, then treats every two hex digits as one byte. Starting at byte index <code>startIndex</code> (zero-based), it returns <code>count</code> consecutive bytes (as hex). If <code>count</code> is omitted, defaults to 1.</p>
+<ul>
+<li><p><strong>Parameters:</strong></p>
+<ol>
+<li><code>hexString</code> (string) – e.g. <code>&quot;A0B1C2D3&quot;</code>, <code>&quot;A0 B1 C2 D3&quot;</code>, <code>&quot;A0-B1-C2-D3&quot;</code>.</li>
+<li><code>startIndex</code> (integer) – zero-based index of the first byte to extract.</li>
+<li><code>count</code> (integer, optional) – number of bytes to extract. Defaults to <code>1</code> if omitted.</li>
+</ol>
+</li>
+<li><p><strong>Return Value:</strong>
+<code>string</code> – the extracted hex bytes concatenated (no separators).</p>
+</li>
+<li><p><strong>Examples:</strong></p>
+<pre><code class="lang-lin">bytes(&quot;A0B1C2D3&quot;, 1)       
+// &quot;B1&quot;        (2nd byte)
+bytes(&quot;A0 B1 C2 D3&quot;, 1, 2) 
+// &quot;B1C2&quot;      (bytes 1 and 2)
+bytes(&quot;A0-B1-C2-D3&quot;, 0, 3) 
+// &quot;A0B1C2&quot;    (first 3 bytes)
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="12-tlv">12. <code>tlv</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">tlv(hexString)
+</code></pre>
+<p><strong>Description:</strong>
+Parses a hex-encoded TLV (Tag-Length-Value) data stream into a <code>TlvObject</code>. You can then navigate or inspect the resulting TLV hierarchy. Internally, it returns an object you can pass to <code>tree</code> or <code>tlv_read</code>.</p>
+<ul>
+<li><p><strong>Parameters:</strong>
+− <code>hexString</code> (string) – a hex stream representing TLV data (e.g. <code>&quot;6F108407A0000000031010A5049F6501FF&quot;</code>).</p>
+</li>
+<li><p><strong>Return Value:</strong>
+<code>TlvObject</code> – a hierarchical representation of parsed TLV.</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">var obj = tlv(&quot;6F108407A0000000031010A5049F6501FF&quot;)
+</code></pre>
+<p><code>obj</code> can now be passed to <code>tree(obj)</code> or navigated with <code>tlv_read</code>.</p>
+</li>
+</ul>
+<hr>
+<h2 id="13-tree">13. <code>tree</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">tree(tlvObject)
+</code></pre>
+<p><strong>Description:</strong>
+Generates a text-based (ASCII-art) “tree” representation of the TLV hierarchy contained inside a <code>TlvObject</code>. Useful for visual inspection of nested TLV structures.</p>
+<ul>
+<li><p><strong>Parameters:</strong>
+− <code>tlvObject</code> (<code>TlvObject</code>) – the result of a prior <code>tlv(...)</code> call.</p>
+</li>
+<li><p><strong>Return Value:</strong>
+<code>string</code> – multi-line ASCII tree (with branches and indentation).</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">var obj = tlv(&quot;6F108407A0000000031010A5049F6501FF&quot;)
+print(tree(obj))
+</code></pre>
+<p>Might output something like:</p>
+<pre><code>└─ 6F … (Tag 6F, Length 10)
+   ├─ 84 A0 00 00 00 03 10 10  (Application ID)
+   ├─ A5 … (Container)
+   │  └─ 9F65 FF  (Value = FF)
+   └─ … other nodes
+</code></pre>
+</li>
+</ul>
+<hr>
+<h2 id="14-tlv_read">14. <code>tlv_read</code></h2>
+<p><strong>Signature (in Lin):</strong></p>
+<pre><code class="lang-lin">tlv_read(tlvObject, key1, key2, ..., keyN)
+</code></pre>
+<p><strong>Description:</strong>
+Walks down a TLV hierarchy inside a <code>TlvObject</code> along a sequence of tag keys (strings). If the final node is a leaf containing a value, it returns that value (typically a byte array or hex string). If it’s a container node, it returns another <code>TlvObject</code>. If any step of the path is invalid (tag not found or current node is not a container), it throws an <code>IndexOutOfRangeException</code> explaining where traversal failed.</p>
+<ul>
+<li><p><strong>Parameters:</strong></p>
+<ol>
+<li><code>tlvObject</code> (<code>TlvObject</code>) – root of the TLV tree.</li>
+<li><code>key1, key2, ..., keyN</code> (string) – tags (e.g. <code>&quot;6F&quot;</code>, <code>&quot;A5&quot;</code>, <code>&quot;9F65&quot;</code>) describing the path from the root to the desired node.</li>
+</ol>
+</li>
+<li><p><strong>Return Value:</strong>
+− If the final node is a container: returns a <code>TlvObject</code>.
+− If the final node holds a raw value: returns that value (byte array or hex).</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-lin">root = tlv(&quot;6F108407A0000000031010A5049F6501FF&quot;)
+// Suppose inside tag 6F → tag A5 → tag 9F65 is a value
+val = tlv_read(root, &quot;6F&quot;, &quot;A5&quot;, &quot;9F65&quot;)
+</code></pre>
+<p>If <code>9F65</code> is a leaf containing raw data, <code>val</code> holds that data; if it’s itself a sub-TLV container, <code>val</code> is a <code>TlvObject</code> for further navigation.</p>
+</li>
+</ul>
+<hr>
+<h2 id="usage-summary">Usage Summary</h2>
+<p>All of these functions are registered inside <code>LinExtension</code>’s constructor (when you create <code>new LinExtension(...)</code>). Once registered, you can call them directly in your Lin script, for example:</p>
+<pre><code class="lang-lin">// Registering LinExtension somewhere in your host app:
+linExt = new LinExtension(page, nfcService, onMessageCallback)
+
+// Then inside Lin script:
+print(&quot;Hello, Lin!&quot;)
+number = num(&quot;FF&quot;, 16)
+// Should print “Decimal of FF is,255”
+print(&quot;Decimal of FF is&quot;, number)       
+asciiText = ascii(&quot;48656C6C6F20&quot;)
+print(&quot;Decoded ASCII:&quot;, asciiText)
+// “Hello ”
+hexData = hex(&quot;ABC&quot;)
+// “41 42 43”
+print(&quot;Hex of 'ABC' is&quot;, hexData)
+part = substr(&quot;LinExtension&quot;, 3, 5) 
+// “Exten”
+print(&quot;substr:&quot;, part)
+replaced = replace(&quot;2025-06-06&quot;, &quot;-&quot;, &quot;/&quot;)
+print(&quot;date with slashes:&quot;, replaced)
+// “2025/06/06”
+found = find(&quot;LinExtension&quot;, &quot;Ext&quot;)  
+// 3
+print(&quot;found at index&quot;, found)
+deco = bytes(&quot;A0B1C2D3&quot;, 1, 2)
+// “B1C2”
+print(&quot;slice bytes:&quot;, deco)
+
+tlvObj = tlv(&quot;6F108407A0000000031010A5049F6501FF&quot;)
+print(tree(tlvObj))
+leaf = tlv_read(tlvObj, &quot;6F&quot;, &quot;A5&quot;, &quot;9F65&quot;)
+print(&quot;leaf value (hex):&quot;, leaf)
+
+apduResult = apdu(&quot;00A404000E315041592E5359532E4444463031&quot;)
+print(&quot;APDU response:&quot;, apduResult)
+printc(&quot;#00FF00&quot;, &quot;Success code:&quot;, apduResult)
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

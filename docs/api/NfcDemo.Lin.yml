@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: NfcDemo.Lin
+  commentId: N:NfcDemo.Lin
+  id: NfcDemo.Lin
+  children:
+  - NfcDemo.Lin.LinExtension
+  langs:
+  - csharp
+  - vb
+  name: NfcDemo.Lin
+  nameWithType: NfcDemo.Lin
+  fullName: NfcDemo.Lin
+  type: Namespace
+  assemblies:
+  - NfcTerminal
+references:
+- uid: NfcDemo.Lin.LinExtension
+  commentId: T:NfcDemo.Lin.LinExtension
+  href: NfcDemo.Lin.LinExtension.html
+  name: LinExtension
+  nameWithType: LinExtension
+  fullName: NfcDemo.Lin.LinExtension

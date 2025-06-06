@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>NFC Demo – Android App | NfcTerminal </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="NFC Demo – Android App | NfcTerminal ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="NfcTerminal">
+            NfcTerminal
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="nfc-demo--android-app">NFC Demo – Android App</h1>
+
+<p><strong>NFC Demo</strong> is an Android-only application for experimenting with NFC smart cards. It provides four main “pages” (screens), each tailored to a specific aspect of NFC development and testing:</p>
+<ol>
+<li><strong>Raw APDU Terminal</strong><br>
+Send and receive low-level APDU commands directly to/from an NFC card.</li>
+<li><strong>Lin Interactive Terminal</strong><br>
+A REPL-style interface powered by the custom <strong>Lin</strong> scripting language, letting you send APDU commands, parse responses, and incorporate logic on the fly.
+<blockquote>
+<p>For more information on Lin, see the <a href="https://github.com/Luki128/Lin-language/tree/main">Lin-language GitHub repo</a>.</p>
+</blockquote>
+</li>
+<li><strong>Lin Script Builder</strong><br>
+A full‐featured script editor where you can compose, and run multi‐line Lin scripts that interact with NFC cards.</li>
+<li><strong>TLV Parser / Tree Viewer</strong><br>
+Feed a hex-encoded TLV response into a parser and view it as a nested, ASCII-art tree. (You can also pipe APDU responses from the Raw Terminal into this page.)</li>
+</ol>
+<hr>
+<h2 id="key-facts">Key Facts</h2>
+<ul>
+<li><strong>Platform:</strong> Android only (no iOS or desktop support at present).</li>
+<li><strong>Architecture:</strong> Built with .NET MAUI for Android.</li>
+<li><strong>Pages / Screens:</strong>
+<ol>
+<li><strong>NFC Terminal (Raw APDU)</strong>
+<ul>
+<li>Text‐based terminal (90% of the screen) for typing APDU hex commands.</li>
+<li>A “Send” button to push the selected APDU to the card.</li>
+<li>Scrollable output area showing card responses (status words + data).</li>
+</ul>
+</li>
+<li><strong>Lin Interactive Terminal</strong>
+<ul>
+<li>REPL prompt for Lin language commands.</li>
+<li>Built-in Lin functions include <code>print</code>, <code>apdu(...)</code>, <code>tlv(...)</code>, <code>tree(...)</code>, etc.</li>
+<li>On each <code>apdu(...)</code> call, Lin will send the hex command to the card and display the response.</li>
+<li>Colors, error reporting, and simple script fragments can be tested here.</li>
+</ul>
+</li>
+<li><strong>Lin Script Builder</strong>
+<ul>
+<li>Simple multiline code editor.</li>
+<li>“Run” button at the top.</li>
+<li>Output area at the bottom, similar to the interactive terminal.</li>
+</ul>
+</li>
+<li><strong>TLV Parser / Tree Viewer</strong>
+<ul>
+<li>Paste or pipe a hex string (e.g. an APDU response) into the input area.</li>
+<li>Instantly parses Tag-Length-Value structures.</li>
+<li>Displays a nested tree in ASCII-art format, showing tags, lengths, values, and hierarchy.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="getting-started">Getting Started</h2>
+<ol>
+<li><p><strong>Install &amp; Run (Android only)</strong></p>
+<ul>
+<li>Clone or download this repository.</li>
+<li>Open in Visual Studio 2022/2023 with .NET MAUI workload installed.</li>
+<li>Ensure your Android SDK minimum target is set to API 21 or higher.</li>
+<li>Deploy to a physical Android device (with NFC) or emulator (requires NFC passthrough).</li>
+</ul>
+</li>
+<li><p><strong>Permissions</strong></p>
+<ul>
+<li>The app requires <code>&lt;uses-permission android:name=&quot;android.permission.NFC&quot; /&gt;</code> in the generated manifest.</li>
+<li>Make sure NFC is enabled on your device.</li>
+</ul>
+</li>
+<li><p><strong>Usage Overview</strong></p>
+<ul>
+<li><strong>Raw APDU Terminal</strong>:
+<ol>
+<li>Launch the “NFC Terminal” page.</li>
+<li>Type a hex APDU (e.g. <code>00A4040007A0000002471001</code>).</li>
+<li>Tap <strong>Send</strong>.</li>
+<li>View the card response.</li>
+</ol>
+</li>
+<li><strong>Lin Interactive Terminal</strong>:
+<ol>
+<li>Open “Lin Terminal.”</li>
+<li>At the prompt, type <code>apdu(&quot;00A4040007A0000002471001&quot;)</code> → returns a hex string.</li>
+<li>Try <code>print(&quot;Hello, NFC!&quot;)</code> or <code>printc(&quot;#00FF00&quot;, &quot;OK&quot;)</code>.</li>
+<li>Combine logic:
+<pre><code class="lang-lin">resp = apdu(&quot;00B0950000&quot;)
+if(find(resp, &quot;9000&quot;) &gt;= 0){
+   printc(&quot;#00FF00&quot;, &quot;Success:&quot;, resp)
+} else {
+   error(&quot;Card returned error:&quot;, resp)
+}
+</code></pre>
+</li>
+</ol>
+</li>
+<li><strong>Lin Script Builder</strong>:
+<ol>
+<li>Navigate to “Script” page.</li>
+<li>Write a multi-line script, for example:
+<pre><code class="lang-lin">// Select PSE
+sel = apdu(&quot;00A404000E315041592E5359532E4444463031&quot;)
+print(&quot;Select PSE&quot;, sel)
+
+// Parse TLV and display hierarchy
+t = tlv(sel)
+print(tree(t))
+
+// Read record 1
+rec = apdu(&quot;00B2010C00&quot;)
+print(&quot;Record 1&quot;, rec)
+</code></pre>
+</li>
+<li>Tap <strong>Run</strong> to execute the entire script at once. Output appears below.</li>
+</ol>
+</li>
+<li><strong>TLV Parser / Tree Viewer</strong>:
+<ol>
+<li>Go to “TLV” page.</li>
+<li>Paste a hex string (e.g. <code>6F10840A325041592E5359532E4444463031A5048801020046...</code>).</li>
+<li>The app will automatically parse and display:
+<pre><code>└─ 6F
+   ├─ 84 : 325041592E5359532E4444463031
+   └─ A5
+      ├─ 88 : 010200
+      └─ 46 : 6F6368657343617264
+</code></pre>
+</li>
+<li>You can also pipe the APDU response from the Raw Terminal.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="license--contributions">License &amp; Contributions</h2>
+<p>This project is released under the MIT License. Contributions are welcome:</p>
+<ul>
+<li>Fork the repository, make your changes, and open a pull request.</li>
+<li>Report issues or feature requests via Issues on GitHub.</li>
+</ul>
+<p>Enjoy experimenting with NFC, APDUs, Lin scripting, and TLV parsing!</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

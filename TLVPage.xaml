@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NfcDemo.TLVPage"
+             Title="TLV Treee">
+    <StackLayout>
+        <HorizontalStackLayout Padding="2,2,2,2" HorizontalOptions="CenterAndExpand">
+            <Button x:Name="ConvertBtn" Text="Convert" Clicked="ConvertBtn_Clicked" Margin="2,2,2,2" />
+            <Button x:Name="CopyBtn" Text="Copy Tree" Clicked="CopyBtn_Clicked" Margin="20,2,2,2" />
+            <Button x:Name="CopyJSONBtn" Text="Copy as JSON" Clicked="CopyJSONBtn_Clicked"  Margin="20,2,2,2"/>
+        </HorizontalStackLayout>
+        <Editor x:Name="InputTLV"  HeightRequest="280" Placeholder="Paste raw TLV …"
+     AutoSize="TextChanges" FontFamily="Consolas" TextChanged="InputTLV_TextChanged"  Margin="9,9,9,9"/>
+        <Editor x:Name="OutpuTLV" Margin="9,9,9,9" Placeholder="TLV"
+AutoSize="TextChanges" FontFamily="Consolas" />
+    </StackLayout>
+</ContentPage>

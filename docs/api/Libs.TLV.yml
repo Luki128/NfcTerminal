@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: Libs.TLV
+  commentId: N:Libs.TLV
+  id: Libs.TLV
+  children:
+  - Libs.TLV.TlvObject
+  - Libs.TLV.TlvParser
+  - Libs.TLV.TreePrinter
+  langs:
+  - csharp
+  - vb
+  name: Libs.TLV
+  nameWithType: Libs.TLV
+  fullName: Libs.TLV
+  type: Namespace
+  assemblies:
+  - NfcTerminal
+references:
+- uid: Libs.TLV.TlvObject
+  commentId: T:Libs.TLV.TlvObject
+  parent: Libs.TLV
+  href: Libs.TLV.TlvObject.html
+  name: TlvObject
+  nameWithType: TlvObject
+  fullName: Libs.TLV.TlvObject
+- uid: Libs.TLV.TlvParser
+  commentId: T:Libs.TLV.TlvParser
+  href: Libs.TLV.TlvParser.html
+  name: TlvParser
+  nameWithType: TlvParser
+  fullName: Libs.TLV.TlvParser
+- uid: Libs.TLV.TreePrinter
+  commentId: T:Libs.TLV.TreePrinter
+  href: Libs.TLV.TreePrinter.html
+  name: TreePrinter
+  nameWithType: TreePrinter
+  fullName: Libs.TLV.TreePrinter
+- uid: Libs.TLV
+  commentId: N:Libs.TLV
+  href: Libs.html
+  name: Libs.TLV
+  nameWithType: Libs.TLV
+  fullName: Libs.TLV
+  spec.csharp:
+  - uid: Libs
+    name: Libs
+    href: Libs.html
+  - name: .
+  - uid: Libs.TLV
+    name: TLV
+    href: Libs.TLV.html
+  spec.vb:
+  - uid: Libs
+    name: Libs
+    href: Libs.html
+  - name: .
+  - uid: Libs.TLV
+    name: TLV
+    href: Libs.TLV.html

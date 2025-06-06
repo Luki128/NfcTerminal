@@ -1,0 +1,5532 @@
+### YamlMime:ManagedReference
+items:
+- uid: NfcDemo.AppDelegate
+  commentId: T:NfcDemo.AppDelegate
+  id: AppDelegate
+  parent: NfcDemo
+  children:
+  - NfcDemo.AppDelegate.CreateMauiApp
+  langs:
+  - csharp
+  - vb
+  name: AppDelegate
+  nameWithType: AppDelegate
+  fullName: NfcDemo.AppDelegate
+  type: Class
+  source:
+    id: AppDelegate
+    path: C:\Users\KubaLocal\Documents\Projekty\NFC_test\NfcDemo\Platforms\iOS\AppDelegate.cs
+    startLine: 4
+  assemblies:
+  - NfcTerminal
+  namespace: NfcDemo
+  syntax:
+    content: >-
+      [Register("AppDelegate")]
+
+      public class AppDelegate : MauiUIApplicationDelegate, IEquatable<NSObject>, INSObjectProtocol, IUIActivityItemsConfigurationProviding, IUIPasteConfigurationSupporting, IUIResponderStandardEditActions, IUIUserActivityRestoring, IUIApplicationDelegate, INativeObject, IDisposable, IPlatformApplication
+    content.vb: >-
+      <Register("AppDelegate")>
+
+      Public Class AppDelegate Inherits MauiUIApplicationDelegate Implements IEquatable(Of NSObject), INSObjectProtocol, IUIActivityItemsConfigurationProviding, IUIPasteConfigurationSupporting, IUIResponderStandardEditActions, IUIUserActivityRestoring, IUIApplicationDelegate, INativeObject, IDisposable, IPlatformApplication
+  inheritance:
+  - System.Object
+  - Foundation.NSObject
+  - UIKit.UIResponder
+  - Microsoft.Maui.MauiUIApplicationDelegate
+  implements:
+  - System.IEquatable{Foundation.NSObject}
+  - Foundation.INSObjectProtocol
+  - UIKit.IUIActivityItemsConfigurationProviding
+  - UIKit.IUIPasteConfigurationSupporting
+  - UIKit.IUIResponderStandardEditActions
+  - UIKit.IUIUserActivityRestoring
+  - UIKit.IUIApplicationDelegate
+  - ObjCRuntime.INativeObject
+  - System.IDisposable
+  - Microsoft.Maui.IPlatformApplication
+  inheritedMembers:
+  - Microsoft.Maui.MauiUIApplicationDelegate.WillFinishLaunching(UIKit.UIApplication,Foundation.NSDictionary)
+  - Microsoft.Maui.MauiUIApplicationDelegate.FinishedLaunching(UIKit.UIApplication,Foundation.NSDictionary)
+  - Microsoft.Maui.MauiUIApplicationDelegate.RespondsToSelector(ObjCRuntime.Selector)
+  - Microsoft.Maui.MauiUIApplicationDelegate.GetConfiguration(UIKit.UIApplication,UIKit.UISceneSession,UIKit.UISceneConnectionOptions)
+  - Microsoft.Maui.MauiUIApplicationDelegate.PerformActionForShortcutItem(UIKit.UIApplication,UIKit.UIApplicationShortcutItem,UIKit.UIOperationHandler)
+  - Microsoft.Maui.MauiUIApplicationDelegate.OpenUrl(UIKit.UIApplication,Foundation.NSUrl,Foundation.NSDictionary)
+  - Microsoft.Maui.MauiUIApplicationDelegate.ContinueUserActivity(UIKit.UIApplication,Foundation.NSUserActivity,UIKit.UIApplicationRestorationHandler)
+  - Microsoft.Maui.MauiUIApplicationDelegate.OnActivated(UIKit.UIApplication)
+  - Microsoft.Maui.MauiUIApplicationDelegate.OnResignActivation(UIKit.UIApplication)
+  - Microsoft.Maui.MauiUIApplicationDelegate.WillTerminate(UIKit.UIApplication)
+  - Microsoft.Maui.MauiUIApplicationDelegate.DidEnterBackground(UIKit.UIApplication)
+  - Microsoft.Maui.MauiUIApplicationDelegate.WillEnterForeground(UIKit.UIApplication)
+  - Microsoft.Maui.MauiUIApplicationDelegate.ApplicationSignificantTimeChange(UIKit.UIApplication)
+  - Microsoft.Maui.MauiUIApplicationDelegate.BuildMenu(UIKit.IUIMenuBuilder)
+  - Microsoft.Maui.MauiUIApplicationDelegate.CanPerform(ObjCRuntime.Selector,Foundation.NSObject)
+  - Microsoft.Maui.MauiUIApplicationDelegate.Current
+  - Microsoft.Maui.MauiUIApplicationDelegate.Window
+  - Microsoft.Maui.MauiUIApplicationDelegate.Services
+  - Microsoft.Maui.MauiUIApplicationDelegate.Application
+  - UIKit.UIResponder.AccessibilityDecrement
+  - UIKit.UIResponder.AccessibilityElementDidBecomeFocused
+  - UIKit.UIResponder.AccessibilityElementDidLoseFocus
+  - UIKit.UIResponder.AccessibilityElementIsFocused
+  - UIKit.UIResponder.AccessibilityIncrement
+  - UIKit.UIResponder.AccessibilityPerformEscape
+  - UIKit.UIResponder.AccessibilityPerformMagicTap
+  - UIKit.UIResponder.AccessibilityScroll(UIKit.UIAccessibilityScrollDirection)
+  - UIKit.UIResponder.BecomeFirstResponder
+  - UIKit.UIResponder.CanPaste(Foundation.NSItemProvider[])
+  - UIKit.UIResponder.CaptureTextFromCamera(Foundation.NSObject)
+  - UIKit.UIResponder.ClearTextInputContextIdentifier(Foundation.NSString)
+  - UIKit.UIResponder.Copy(Foundation.NSObject)
+  - UIKit.UIResponder.Cut(Foundation.NSObject)
+  - UIKit.UIResponder.DecreaseSize(Foundation.NSObject)
+  - UIKit.UIResponder.Delete(Foundation.NSObject)
+  - UIKit.UIResponder.Duplicate(Foundation.NSObject)
+  - UIKit.UIResponder.Export(Foundation.NSObject)
+  - UIKit.UIResponder.Find(Foundation.NSObject)
+  - UIKit.UIResponder.FindAndReplace(Foundation.NSObject)
+  - UIKit.UIResponder.FindNext(Foundation.NSObject)
+  - UIKit.UIResponder.FindPrevious(Foundation.NSObject)
+  - UIKit.UIResponder.GetTargetForAction(ObjCRuntime.Selector,Foundation.NSObject)
+  - UIKit.UIResponder.IncreaseSize(Foundation.NSObject)
+  - UIKit.UIResponder.MakeTextWritingDirectionLeftToRight(Foundation.NSObject)
+  - UIKit.UIResponder.MakeTextWritingDirectionRightToLeft(Foundation.NSObject)
+  - UIKit.UIResponder.MotionBegan(UIKit.UIEventSubtype,UIKit.UIEvent)
+  - UIKit.UIResponder.MotionCancelled(UIKit.UIEventSubtype,UIKit.UIEvent)
+  - UIKit.UIResponder.MotionEnded(UIKit.UIEventSubtype,UIKit.UIEvent)
+  - UIKit.UIResponder.Move(Foundation.NSObject)
+  - UIKit.UIResponder.Paste(Foundation.NSObject)
+  - UIKit.UIResponder.Paste(Foundation.NSItemProvider[])
+  - UIKit.UIResponder.PasteAndGo(Foundation.NSObject)
+  - UIKit.UIResponder.PasteAndMatchStyle(Foundation.NSObject)
+  - UIKit.UIResponder.PasteAndSearch(Foundation.NSObject)
+  - UIKit.UIResponder.PressesBegan(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  - UIKit.UIResponder.PressesCancelled(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  - UIKit.UIResponder.PressesChanged(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  - UIKit.UIResponder.PressesEnded(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  - UIKit.UIResponder.Print(Foundation.NSObject)
+  - UIKit.UIResponder.ReloadInputViews
+  - UIKit.UIResponder.RemoteControlReceived(UIKit.UIEvent)
+  - UIKit.UIResponder.Rename(Foundation.NSObject)
+  - UIKit.UIResponder.ResignFirstResponder
+  - UIKit.UIResponder.RestoreUserActivityState(Foundation.NSUserActivity)
+  - UIKit.UIResponder.Select(Foundation.NSObject)
+  - UIKit.UIResponder.SelectAll(Foundation.NSObject)
+  - UIKit.UIResponder.ToggleBoldface(Foundation.NSObject)
+  - UIKit.UIResponder.ToggleItalics(Foundation.NSObject)
+  - UIKit.UIResponder.ToggleUnderline(Foundation.NSObject)
+  - UIKit.UIResponder.TouchesBegan(Foundation.NSSet,UIKit.UIEvent)
+  - UIKit.UIResponder.TouchesCancelled(Foundation.NSSet,UIKit.UIEvent)
+  - UIKit.UIResponder.TouchesEnded(Foundation.NSSet,UIKit.UIEvent)
+  - UIKit.UIResponder.TouchesEstimatedPropertiesUpdated(Foundation.NSSet)
+  - UIKit.UIResponder.TouchesMoved(Foundation.NSSet,UIKit.UIEvent)
+  - UIKit.UIResponder.UpdateTextAttributes(UIKit.UITextAttributesConversionHandler)
+  - UIKit.UIResponder.UpdateUserActivityState(Foundation.NSUserActivity)
+  - UIKit.UIResponder.UseSelectionForFind(Foundation.NSObject)
+  - UIKit.UIResponder.ValidateCommand(UIKit.UICommand)
+  - UIKit.UIResponder.ClassHandle
+  - UIKit.UIResponder.AccessibilityAssistiveTechnologyFocusedIdentifiers
+  - UIKit.UIResponder.AccessibilityCustomActions
+  - UIKit.UIResponder.AccessibilityDragSourceDescriptors
+  - UIKit.UIResponder.AccessibilityDropPointDescriptors
+  - UIKit.UIResponder.ActivityItemsConfiguration
+  - UIKit.UIResponder.CanBecomeFirstResponder
+  - UIKit.UIResponder.CanResignFirstResponder
+  - UIKit.UIResponder.EditingInteractionConfiguration
+  - UIKit.UIResponder.InputAccessoryView
+  - UIKit.UIResponder.InputAccessoryViewController
+  - UIKit.UIResponder.InputAssistantItem
+  - UIKit.UIResponder.InputView
+  - UIKit.UIResponder.InputViewController
+  - UIKit.UIResponder.IsFirstResponder
+  - UIKit.UIResponder.KeyCommands
+  - UIKit.UIResponder.NextResponder
+  - UIKit.UIResponder.PasteConfiguration
+  - UIKit.UIResponder.TextInputContextIdentifier
+  - UIKit.UIResponder.TextInputMode
+  - UIKit.UIResponder.UndoManager
+  - UIKit.UIResponder.UserActivity
+  - Foundation.NSObject.PlatformAssembly
+  - Foundation.NSObject.Dispose
+  - Foundation.NSObject.MarkDirty
+  - Foundation.NSObject.ConformsToProtocol(ObjCRuntime.NativeHandle)
+  - Foundation.NSObject.DangerousRelease
+  - Foundation.NSObject.DangerousRetain
+  - Foundation.NSObject.DangerousAutorelease
+  - Foundation.NSObject.BeginInvokeOnMainThread(ObjCRuntime.Selector,Foundation.NSObject)
+  - Foundation.NSObject.InvokeOnMainThread(ObjCRuntime.Selector,Foundation.NSObject)
+  - Foundation.NSObject.BeginInvokeOnMainThread(System.Action)
+  - Foundation.NSObject.InvokeOnMainThread(System.Action)
+  - Foundation.NSObject.FromObject(System.Object)
+  - Foundation.NSObject.SetValueForKeyPath(ObjCRuntime.NativeHandle,Foundation.NSString)
+  - Foundation.NSObject.GetHashCode
+  - Foundation.NSObject.Equals(System.Object)
+  - Foundation.NSObject.Equals(Foundation.NSObject)
+  - Foundation.NSObject.ToString
+  - Foundation.NSObject.Invoke(System.Action,System.Double)
+  - Foundation.NSObject.Invoke(System.Action,System.TimeSpan)
+  - Foundation.NSObject.Dispose(System.Boolean)
+  - Foundation.NSObject.AddObserver(System.String,Foundation.NSKeyValueObservingOptions,System.Action{Foundation.NSObservedChange})
+  - Foundation.NSObject.AddObserver(Foundation.NSString,Foundation.NSKeyValueObservingOptions,System.Action{Foundation.NSObservedChange})
+  - Foundation.NSObject.Alloc(ObjCRuntime.Class)
+  - Foundation.NSObject.Init
+  - Foundation.NSObject.InvokeInBackground(System.Action)
+  - Foundation.NSObject.AddObserver(Foundation.NSObject,Foundation.NSString,Foundation.NSKeyValueObservingOptions,System.IntPtr)
+  - Foundation.NSObject.AddObserver(Foundation.NSObject,System.String,Foundation.NSKeyValueObservingOptions,System.IntPtr)
+  - Foundation.NSObject.AutomaticallyNotifiesObserversForKey(System.String)
+  - Foundation.NSObject.AwakeFromNib
+  - Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject)
+  - Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject,ObjCRuntime.Selector,Foundation.NSObject)
+  - Foundation.NSObject.Copy
+  - Foundation.NSObject.DidChange(Foundation.NSKeyValueChange,Foundation.NSIndexSet,Foundation.NSString)
+  - Foundation.NSObject.DidChange(Foundation.NSString,Foundation.NSKeyValueSetMutationKind,Foundation.NSSet)
+  - Foundation.NSObject.DidChangeValue(System.String)
+  - Foundation.NSObject.DoesNotRecognizeSelector(ObjCRuntime.Selector)
+  - Foundation.NSObject.GetDictionaryOfValuesFromKeys(Foundation.NSString[])
+  - Foundation.NSObject.GetKeyPathsForValuesAffecting(Foundation.NSString)
+  - Foundation.NSObject.GetMethodForSelector(ObjCRuntime.Selector)
+  - Foundation.NSObject.GetNativeHash
+  - Foundation.NSObject.IsEqual(Foundation.NSObject)
+  - Foundation.NSObject.IsKindOfClass(ObjCRuntime.Class)
+  - Foundation.NSObject.IsMemberOfClass(ObjCRuntime.Class)
+  - Foundation.NSObject.MutableCopy
+  - Foundation.NSObject.ObserveValue(Foundation.NSString,Foundation.NSObject,Foundation.NSDictionary,System.IntPtr)
+  - Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,System.Double,Foundation.NSString[])
+  - Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,System.Double)
+  - Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSThread,Foundation.NSObject,System.Boolean)
+  - Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSThread,Foundation.NSObject,System.Boolean,Foundation.NSString[])
+  - Foundation.NSObject.PerformSelector(ObjCRuntime.Selector)
+  - Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject)
+  - Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,Foundation.NSObject)
+  - Foundation.NSObject.PrepareForInterfaceBuilder
+  - Foundation.NSObject.RemoveObserver(Foundation.NSObject,Foundation.NSString,System.IntPtr)
+  - Foundation.NSObject.RemoveObserver(Foundation.NSObject,System.String,System.IntPtr)
+  - Foundation.NSObject.RemoveObserver(Foundation.NSObject,Foundation.NSString)
+  - Foundation.NSObject.RemoveObserver(Foundation.NSObject,System.String)
+  - Foundation.NSObject.SetNilValueForKey(Foundation.NSString)
+  - Foundation.NSObject.SetValueForKey(Foundation.NSObject,Foundation.NSString)
+  - Foundation.NSObject.SetValueForKeyPath(Foundation.NSObject,Foundation.NSString)
+  - Foundation.NSObject.SetValueForUndefinedKey(Foundation.NSObject,Foundation.NSString)
+  - Foundation.NSObject.SetValuesForKeysWithDictionary(Foundation.NSDictionary)
+  - Foundation.NSObject.ValueForKey(Foundation.NSString)
+  - Foundation.NSObject.ValueForKeyPath(Foundation.NSString)
+  - Foundation.NSObject.ValueForUndefinedKey(Foundation.NSString)
+  - Foundation.NSObject.WillChange(Foundation.NSKeyValueChange,Foundation.NSIndexSet,Foundation.NSString)
+  - Foundation.NSObject.WillChange(Foundation.NSString,Foundation.NSKeyValueSetMutationKind,Foundation.NSSet)
+  - Foundation.NSObject.WillChangeValue(System.String)
+  - Foundation.NSObject.IsDirectBinding
+  - Foundation.NSObject.SuperHandle
+  - Foundation.NSObject.Handle
+  - Foundation.NSObject.AccessibilityAttributedUserInputLabels
+  - Foundation.NSObject.AccessibilityRespondsToUserInteraction
+  - Foundation.NSObject.AccessibilityTextualContext
+  - Foundation.NSObject.AccessibilityUserInputLabels
+  - Foundation.NSObject.Class
+  - Foundation.NSObject.DebugDescription
+  - Foundation.NSObject.Description
+  - Foundation.NSObject.IsProxy
+  - Foundation.NSObject.RetainCount
+  - Foundation.NSObject.Self
+  - Foundation.NSObject.Superclass
+  - Foundation.NSObject.Zone
+  - Foundation.NSObject.ChangeIndexesKey
+  - Foundation.NSObject.ChangeKindKey
+  - Foundation.NSObject.ChangeNewKey
+  - Foundation.NSObject.ChangeNotificationIsPriorKey
+  - Foundation.NSObject.ChangeOldKey
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: Foundation.RegisterAttribute
+    ctor: Foundation.RegisterAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AppDelegate
+- uid: NfcDemo.AppDelegate.CreateMauiApp
+  commentId: M:NfcDemo.AppDelegate.CreateMauiApp
+  id: CreateMauiApp
+  parent: NfcDemo.AppDelegate
+  langs:
+  - csharp
+  - vb
+  name: CreateMauiApp()
+  nameWithType: AppDelegate.CreateMauiApp()
+  fullName: NfcDemo.AppDelegate.CreateMauiApp()
+  type: Method
+  source:
+    id: CreateMauiApp
+    path: C:\Users\KubaLocal\Documents\Projekty\NFC_test\NfcDemo\Platforms\iOS\AppDelegate.cs
+    startLine: 7
+  assemblies:
+  - NfcTerminal
+  namespace: NfcDemo
+  summary: >-
+    When overridden in a derived class, creates the <xref href="Microsoft.Maui.Hosting.MauiApp" data-throw-if-not-resolved="false"></xref> to be used in this application.
+
+    Typically a <xref href="Microsoft.Maui.Hosting.MauiApp" data-throw-if-not-resolved="false"></xref> is created by calling <xref href="Microsoft.Maui.Hosting.MauiApp.CreateBuilder(System.Boolean)" data-throw-if-not-resolved="false"></xref>, configuring
+
+    the returned <xref href="Microsoft.Maui.Hosting.MauiAppBuilder" data-throw-if-not-resolved="false"></xref>, and returning the built app by calling <xref href="Microsoft.Maui.Hosting.MauiAppBuilder.Build" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected override MauiApp CreateMauiApp()
+    return:
+      type: Microsoft.Maui.Hosting.MauiApp
+      description: The built <xref href="Microsoft.Maui.Hosting.MauiApp" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Protected Overrides Function CreateMauiApp() As MauiApp
+  overridden: Microsoft.Maui.MauiUIApplicationDelegate.CreateMauiApp
+  overload: NfcDemo.AppDelegate.CreateMauiApp*
+references:
+- uid: NfcDemo
+  commentId: N:NfcDemo
+  href: NfcDemo.html
+  name: NfcDemo
+  nameWithType: NfcDemo
+  fullName: NfcDemo
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Foundation.NSObject
+  commentId: T:Foundation.NSObject
+  parent: Foundation
+  isExternal: true
+  name: NSObject
+  nameWithType: NSObject
+  fullName: Foundation.NSObject
+- uid: UIKit.UIResponder
+  commentId: T:UIKit.UIResponder
+  parent: UIKit
+  isExternal: true
+  name: UIResponder
+  nameWithType: UIResponder
+  fullName: UIKit.UIResponder
+- uid: Microsoft.Maui.MauiUIApplicationDelegate
+  commentId: T:Microsoft.Maui.MauiUIApplicationDelegate
+  parent: Microsoft.Maui
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate
+  name: MauiUIApplicationDelegate
+  nameWithType: MauiUIApplicationDelegate
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate
+- uid: System.IEquatable{Foundation.NSObject}
+  commentId: T:System.IEquatable{Foundation.NSObject}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<NSObject>
+  nameWithType: IEquatable<NSObject>
+  fullName: System.IEquatable<Foundation.NSObject>
+  nameWithType.vb: IEquatable(Of NSObject)
+  fullName.vb: System.IEquatable(Of Foundation.NSObject)
+  name.vb: IEquatable(Of NSObject)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: Foundation.INSObjectProtocol
+  commentId: T:Foundation.INSObjectProtocol
+  parent: Foundation
+  isExternal: true
+  name: INSObjectProtocol
+  nameWithType: INSObjectProtocol
+  fullName: Foundation.INSObjectProtocol
+- uid: UIKit.IUIActivityItemsConfigurationProviding
+  commentId: T:UIKit.IUIActivityItemsConfigurationProviding
+  parent: UIKit
+  isExternal: true
+  name: IUIActivityItemsConfigurationProviding
+  nameWithType: IUIActivityItemsConfigurationProviding
+  fullName: UIKit.IUIActivityItemsConfigurationProviding
+- uid: UIKit.IUIPasteConfigurationSupporting
+  commentId: T:UIKit.IUIPasteConfigurationSupporting
+  parent: UIKit
+  isExternal: true
+  name: IUIPasteConfigurationSupporting
+  nameWithType: IUIPasteConfigurationSupporting
+  fullName: UIKit.IUIPasteConfigurationSupporting
+- uid: UIKit.IUIResponderStandardEditActions
+  commentId: T:UIKit.IUIResponderStandardEditActions
+  parent: UIKit
+  isExternal: true
+  name: IUIResponderStandardEditActions
+  nameWithType: IUIResponderStandardEditActions
+  fullName: UIKit.IUIResponderStandardEditActions
+- uid: UIKit.IUIUserActivityRestoring
+  commentId: T:UIKit.IUIUserActivityRestoring
+  parent: UIKit
+  isExternal: true
+  name: IUIUserActivityRestoring
+  nameWithType: IUIUserActivityRestoring
+  fullName: UIKit.IUIUserActivityRestoring
+- uid: UIKit.IUIApplicationDelegate
+  commentId: T:UIKit.IUIApplicationDelegate
+  parent: UIKit
+  isExternal: true
+  name: IUIApplicationDelegate
+  nameWithType: IUIApplicationDelegate
+  fullName: UIKit.IUIApplicationDelegate
+- uid: ObjCRuntime.INativeObject
+  commentId: T:ObjCRuntime.INativeObject
+  parent: ObjCRuntime
+  isExternal: true
+  name: INativeObject
+  nameWithType: INativeObject
+  fullName: ObjCRuntime.INativeObject
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.Maui.IPlatformApplication
+  commentId: T:Microsoft.Maui.IPlatformApplication
+  parent: Microsoft.Maui
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.iplatformapplication
+  name: IPlatformApplication
+  nameWithType: IPlatformApplication
+  fullName: Microsoft.Maui.IPlatformApplication
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.WillFinishLaunching(UIKit.UIApplication,Foundation.NSDictionary)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.WillFinishLaunching(UIKit.UIApplication,Foundation.NSDictionary)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.willfinishlaunching
+  name: WillFinishLaunching(UIApplication, NSDictionary)
+  nameWithType: MauiUIApplicationDelegate.WillFinishLaunching(UIApplication, NSDictionary)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.WillFinishLaunching(UIKit.UIApplication, Foundation.NSDictionary)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.WillFinishLaunching(UIKit.UIApplication,Foundation.NSDictionary)
+    name: WillFinishLaunching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.willfinishlaunching
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSDictionary
+    name: NSDictionary
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.WillFinishLaunching(UIKit.UIApplication,Foundation.NSDictionary)
+    name: WillFinishLaunching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.willfinishlaunching
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSDictionary
+    name: NSDictionary
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.FinishedLaunching(UIKit.UIApplication,Foundation.NSDictionary)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.FinishedLaunching(UIKit.UIApplication,Foundation.NSDictionary)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.finishedlaunching
+  name: FinishedLaunching(UIApplication, NSDictionary)
+  nameWithType: MauiUIApplicationDelegate.FinishedLaunching(UIApplication, NSDictionary)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.FinishedLaunching(UIKit.UIApplication, Foundation.NSDictionary)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.FinishedLaunching(UIKit.UIApplication,Foundation.NSDictionary)
+    name: FinishedLaunching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.finishedlaunching
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSDictionary
+    name: NSDictionary
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.FinishedLaunching(UIKit.UIApplication,Foundation.NSDictionary)
+    name: FinishedLaunching
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.finishedlaunching
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSDictionary
+    name: NSDictionary
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.RespondsToSelector(ObjCRuntime.Selector)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.RespondsToSelector(ObjCRuntime.Selector)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.respondstoselector
+  name: RespondsToSelector(Selector)
+  nameWithType: MauiUIApplicationDelegate.RespondsToSelector(Selector)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.RespondsToSelector(ObjCRuntime.Selector)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.RespondsToSelector(ObjCRuntime.Selector)
+    name: RespondsToSelector
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.respondstoselector
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.RespondsToSelector(ObjCRuntime.Selector)
+    name: RespondsToSelector
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.respondstoselector
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.GetConfiguration(UIKit.UIApplication,UIKit.UISceneSession,UIKit.UISceneConnectionOptions)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.GetConfiguration(UIKit.UIApplication,UIKit.UISceneSession,UIKit.UISceneConnectionOptions)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.getconfiguration
+  name: GetConfiguration(UIApplication, UISceneSession, UISceneConnectionOptions)
+  nameWithType: MauiUIApplicationDelegate.GetConfiguration(UIApplication, UISceneSession, UISceneConnectionOptions)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.GetConfiguration(UIKit.UIApplication, UIKit.UISceneSession, UIKit.UISceneConnectionOptions)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.GetConfiguration(UIKit.UIApplication,UIKit.UISceneSession,UIKit.UISceneConnectionOptions)
+    name: GetConfiguration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.getconfiguration
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UISceneSession
+    name: UISceneSession
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UISceneConnectionOptions
+    name: UISceneConnectionOptions
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.GetConfiguration(UIKit.UIApplication,UIKit.UISceneSession,UIKit.UISceneConnectionOptions)
+    name: GetConfiguration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.getconfiguration
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UISceneSession
+    name: UISceneSession
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UISceneConnectionOptions
+    name: UISceneConnectionOptions
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.PerformActionForShortcutItem(UIKit.UIApplication,UIKit.UIApplicationShortcutItem,UIKit.UIOperationHandler)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.PerformActionForShortcutItem(UIKit.UIApplication,UIKit.UIApplicationShortcutItem,UIKit.UIOperationHandler)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.performactionforshortcutitem
+  name: PerformActionForShortcutItem(UIApplication, UIApplicationShortcutItem, UIOperationHandler)
+  nameWithType: MauiUIApplicationDelegate.PerformActionForShortcutItem(UIApplication, UIApplicationShortcutItem, UIOperationHandler)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.PerformActionForShortcutItem(UIKit.UIApplication, UIKit.UIApplicationShortcutItem, UIKit.UIOperationHandler)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.PerformActionForShortcutItem(UIKit.UIApplication,UIKit.UIApplicationShortcutItem,UIKit.UIOperationHandler)
+    name: PerformActionForShortcutItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.performactionforshortcutitem
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIApplicationShortcutItem
+    name: UIApplicationShortcutItem
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIOperationHandler
+    name: UIOperationHandler
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.PerformActionForShortcutItem(UIKit.UIApplication,UIKit.UIApplicationShortcutItem,UIKit.UIOperationHandler)
+    name: PerformActionForShortcutItem
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.performactionforshortcutitem
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIApplicationShortcutItem
+    name: UIApplicationShortcutItem
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIOperationHandler
+    name: UIOperationHandler
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.OpenUrl(UIKit.UIApplication,Foundation.NSUrl,Foundation.NSDictionary)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.OpenUrl(UIKit.UIApplication,Foundation.NSUrl,Foundation.NSDictionary)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.openurl
+  name: OpenUrl(UIApplication, NSUrl, NSDictionary)
+  nameWithType: MauiUIApplicationDelegate.OpenUrl(UIApplication, NSUrl, NSDictionary)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.OpenUrl(UIKit.UIApplication, Foundation.NSUrl, Foundation.NSDictionary)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.OpenUrl(UIKit.UIApplication,Foundation.NSUrl,Foundation.NSDictionary)
+    name: OpenUrl
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.openurl
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSUrl
+    name: NSUrl
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSDictionary
+    name: NSDictionary
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.OpenUrl(UIKit.UIApplication,Foundation.NSUrl,Foundation.NSDictionary)
+    name: OpenUrl
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.openurl
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSUrl
+    name: NSUrl
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSDictionary
+    name: NSDictionary
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.ContinueUserActivity(UIKit.UIApplication,Foundation.NSUserActivity,UIKit.UIApplicationRestorationHandler)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.ContinueUserActivity(UIKit.UIApplication,Foundation.NSUserActivity,UIKit.UIApplicationRestorationHandler)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.continueuseractivity
+  name: ContinueUserActivity(UIApplication, NSUserActivity, UIApplicationRestorationHandler)
+  nameWithType: MauiUIApplicationDelegate.ContinueUserActivity(UIApplication, NSUserActivity, UIApplicationRestorationHandler)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.ContinueUserActivity(UIKit.UIApplication, Foundation.NSUserActivity, UIKit.UIApplicationRestorationHandler)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.ContinueUserActivity(UIKit.UIApplication,Foundation.NSUserActivity,UIKit.UIApplicationRestorationHandler)
+    name: ContinueUserActivity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.continueuseractivity
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSUserActivity
+    name: NSUserActivity
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIApplicationRestorationHandler
+    name: UIApplicationRestorationHandler
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.ContinueUserActivity(UIKit.UIApplication,Foundation.NSUserActivity,UIKit.UIApplicationRestorationHandler)
+    name: ContinueUserActivity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.continueuseractivity
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSUserActivity
+    name: NSUserActivity
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIApplicationRestorationHandler
+    name: UIApplicationRestorationHandler
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.OnActivated(UIKit.UIApplication)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.OnActivated(UIKit.UIApplication)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.onactivated
+  name: OnActivated(UIApplication)
+  nameWithType: MauiUIApplicationDelegate.OnActivated(UIApplication)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.OnActivated(UIKit.UIApplication)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.OnActivated(UIKit.UIApplication)
+    name: OnActivated
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.onactivated
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.OnActivated(UIKit.UIApplication)
+    name: OnActivated
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.onactivated
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.OnResignActivation(UIKit.UIApplication)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.OnResignActivation(UIKit.UIApplication)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.onresignactivation
+  name: OnResignActivation(UIApplication)
+  nameWithType: MauiUIApplicationDelegate.OnResignActivation(UIApplication)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.OnResignActivation(UIKit.UIApplication)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.OnResignActivation(UIKit.UIApplication)
+    name: OnResignActivation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.onresignactivation
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.OnResignActivation(UIKit.UIApplication)
+    name: OnResignActivation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.onresignactivation
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.WillTerminate(UIKit.UIApplication)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.WillTerminate(UIKit.UIApplication)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.willterminate
+  name: WillTerminate(UIApplication)
+  nameWithType: MauiUIApplicationDelegate.WillTerminate(UIApplication)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.WillTerminate(UIKit.UIApplication)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.WillTerminate(UIKit.UIApplication)
+    name: WillTerminate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.willterminate
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.WillTerminate(UIKit.UIApplication)
+    name: WillTerminate
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.willterminate
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.DidEnterBackground(UIKit.UIApplication)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.DidEnterBackground(UIKit.UIApplication)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.didenterbackground
+  name: DidEnterBackground(UIApplication)
+  nameWithType: MauiUIApplicationDelegate.DidEnterBackground(UIApplication)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.DidEnterBackground(UIKit.UIApplication)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.DidEnterBackground(UIKit.UIApplication)
+    name: DidEnterBackground
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.didenterbackground
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.DidEnterBackground(UIKit.UIApplication)
+    name: DidEnterBackground
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.didenterbackground
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.WillEnterForeground(UIKit.UIApplication)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.WillEnterForeground(UIKit.UIApplication)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.willenterforeground
+  name: WillEnterForeground(UIApplication)
+  nameWithType: MauiUIApplicationDelegate.WillEnterForeground(UIApplication)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.WillEnterForeground(UIKit.UIApplication)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.WillEnterForeground(UIKit.UIApplication)
+    name: WillEnterForeground
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.willenterforeground
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.WillEnterForeground(UIKit.UIApplication)
+    name: WillEnterForeground
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.willenterforeground
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.ApplicationSignificantTimeChange(UIKit.UIApplication)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.ApplicationSignificantTimeChange(UIKit.UIApplication)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.applicationsignificanttimechange
+  name: ApplicationSignificantTimeChange(UIApplication)
+  nameWithType: MauiUIApplicationDelegate.ApplicationSignificantTimeChange(UIApplication)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.ApplicationSignificantTimeChange(UIKit.UIApplication)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.ApplicationSignificantTimeChange(UIKit.UIApplication)
+    name: ApplicationSignificantTimeChange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.applicationsignificanttimechange
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.ApplicationSignificantTimeChange(UIKit.UIApplication)
+    name: ApplicationSignificantTimeChange
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.applicationsignificanttimechange
+  - name: (
+  - uid: UIKit.UIApplication
+    name: UIApplication
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.BuildMenu(UIKit.IUIMenuBuilder)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.BuildMenu(UIKit.IUIMenuBuilder)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.buildmenu
+  name: BuildMenu(IUIMenuBuilder)
+  nameWithType: MauiUIApplicationDelegate.BuildMenu(IUIMenuBuilder)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.BuildMenu(UIKit.IUIMenuBuilder)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.BuildMenu(UIKit.IUIMenuBuilder)
+    name: BuildMenu
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.buildmenu
+  - name: (
+  - uid: UIKit.IUIMenuBuilder
+    name: IUIMenuBuilder
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.BuildMenu(UIKit.IUIMenuBuilder)
+    name: BuildMenu
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.buildmenu
+  - name: (
+  - uid: UIKit.IUIMenuBuilder
+    name: IUIMenuBuilder
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.CanPerform(ObjCRuntime.Selector,Foundation.NSObject)
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.CanPerform(ObjCRuntime.Selector,Foundation.NSObject)
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.canperform
+  name: CanPerform(Selector, NSObject)
+  nameWithType: MauiUIApplicationDelegate.CanPerform(Selector, NSObject)
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.CanPerform(ObjCRuntime.Selector, Foundation.NSObject)
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.CanPerform(ObjCRuntime.Selector,Foundation.NSObject)
+    name: CanPerform
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.canperform
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.CanPerform(ObjCRuntime.Selector,Foundation.NSObject)
+    name: CanPerform
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.canperform
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.Current
+  commentId: P:Microsoft.Maui.MauiUIApplicationDelegate.Current
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.current
+  name: Current
+  nameWithType: MauiUIApplicationDelegate.Current
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.Current
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.Window
+  commentId: P:Microsoft.Maui.MauiUIApplicationDelegate.Window
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.window
+  name: Window
+  nameWithType: MauiUIApplicationDelegate.Window
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.Window
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.Services
+  commentId: P:Microsoft.Maui.MauiUIApplicationDelegate.Services
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.services
+  name: Services
+  nameWithType: MauiUIApplicationDelegate.Services
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.Services
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.Application
+  commentId: P:Microsoft.Maui.MauiUIApplicationDelegate.Application
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.application
+  name: Application
+  nameWithType: MauiUIApplicationDelegate.Application
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.Application
+- uid: UIKit.UIResponder.AccessibilityDecrement
+  commentId: M:UIKit.UIResponder.AccessibilityDecrement
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityDecrement()
+  nameWithType: UIResponder.AccessibilityDecrement()
+  fullName: UIKit.UIResponder.AccessibilityDecrement()
+  spec.csharp:
+  - uid: UIKit.UIResponder.AccessibilityDecrement
+    name: AccessibilityDecrement
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.AccessibilityDecrement
+    name: AccessibilityDecrement
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UIKit.UIResponder.AccessibilityElementDidBecomeFocused
+  commentId: M:UIKit.UIResponder.AccessibilityElementDidBecomeFocused
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityElementDidBecomeFocused()
+  nameWithType: UIResponder.AccessibilityElementDidBecomeFocused()
+  fullName: UIKit.UIResponder.AccessibilityElementDidBecomeFocused()
+  spec.csharp:
+  - uid: UIKit.UIResponder.AccessibilityElementDidBecomeFocused
+    name: AccessibilityElementDidBecomeFocused
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.AccessibilityElementDidBecomeFocused
+    name: AccessibilityElementDidBecomeFocused
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UIKit.UIResponder.AccessibilityElementDidLoseFocus
+  commentId: M:UIKit.UIResponder.AccessibilityElementDidLoseFocus
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityElementDidLoseFocus()
+  nameWithType: UIResponder.AccessibilityElementDidLoseFocus()
+  fullName: UIKit.UIResponder.AccessibilityElementDidLoseFocus()
+  spec.csharp:
+  - uid: UIKit.UIResponder.AccessibilityElementDidLoseFocus
+    name: AccessibilityElementDidLoseFocus
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.AccessibilityElementDidLoseFocus
+    name: AccessibilityElementDidLoseFocus
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UIKit.UIResponder.AccessibilityElementIsFocused
+  commentId: M:UIKit.UIResponder.AccessibilityElementIsFocused
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityElementIsFocused()
+  nameWithType: UIResponder.AccessibilityElementIsFocused()
+  fullName: UIKit.UIResponder.AccessibilityElementIsFocused()
+  spec.csharp:
+  - uid: UIKit.UIResponder.AccessibilityElementIsFocused
+    name: AccessibilityElementIsFocused
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.AccessibilityElementIsFocused
+    name: AccessibilityElementIsFocused
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UIKit.UIResponder.AccessibilityIncrement
+  commentId: M:UIKit.UIResponder.AccessibilityIncrement
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityIncrement()
+  nameWithType: UIResponder.AccessibilityIncrement()
+  fullName: UIKit.UIResponder.AccessibilityIncrement()
+  spec.csharp:
+  - uid: UIKit.UIResponder.AccessibilityIncrement
+    name: AccessibilityIncrement
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.AccessibilityIncrement
+    name: AccessibilityIncrement
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UIKit.UIResponder.AccessibilityPerformEscape
+  commentId: M:UIKit.UIResponder.AccessibilityPerformEscape
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityPerformEscape()
+  nameWithType: UIResponder.AccessibilityPerformEscape()
+  fullName: UIKit.UIResponder.AccessibilityPerformEscape()
+  spec.csharp:
+  - uid: UIKit.UIResponder.AccessibilityPerformEscape
+    name: AccessibilityPerformEscape
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.AccessibilityPerformEscape
+    name: AccessibilityPerformEscape
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UIKit.UIResponder.AccessibilityPerformMagicTap
+  commentId: M:UIKit.UIResponder.AccessibilityPerformMagicTap
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityPerformMagicTap()
+  nameWithType: UIResponder.AccessibilityPerformMagicTap()
+  fullName: UIKit.UIResponder.AccessibilityPerformMagicTap()
+  spec.csharp:
+  - uid: UIKit.UIResponder.AccessibilityPerformMagicTap
+    name: AccessibilityPerformMagicTap
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.AccessibilityPerformMagicTap
+    name: AccessibilityPerformMagicTap
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UIKit.UIResponder.AccessibilityScroll(UIKit.UIAccessibilityScrollDirection)
+  commentId: M:UIKit.UIResponder.AccessibilityScroll(UIKit.UIAccessibilityScrollDirection)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityScroll(UIAccessibilityScrollDirection)
+  nameWithType: UIResponder.AccessibilityScroll(UIAccessibilityScrollDirection)
+  fullName: UIKit.UIResponder.AccessibilityScroll(UIKit.UIAccessibilityScrollDirection)
+  spec.csharp:
+  - uid: UIKit.UIResponder.AccessibilityScroll(UIKit.UIAccessibilityScrollDirection)
+    name: AccessibilityScroll
+    isExternal: true
+  - name: (
+  - uid: UIKit.UIAccessibilityScrollDirection
+    name: UIAccessibilityScrollDirection
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.AccessibilityScroll(UIKit.UIAccessibilityScrollDirection)
+    name: AccessibilityScroll
+    isExternal: true
+  - name: (
+  - uid: UIKit.UIAccessibilityScrollDirection
+    name: UIAccessibilityScrollDirection
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.BecomeFirstResponder
+  commentId: M:UIKit.UIResponder.BecomeFirstResponder
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: BecomeFirstResponder()
+  nameWithType: UIResponder.BecomeFirstResponder()
+  fullName: UIKit.UIResponder.BecomeFirstResponder()
+  spec.csharp:
+  - uid: UIKit.UIResponder.BecomeFirstResponder
+    name: BecomeFirstResponder
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.BecomeFirstResponder
+    name: BecomeFirstResponder
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UIKit.UIResponder.CanPaste(Foundation.NSItemProvider[])
+  commentId: M:UIKit.UIResponder.CanPaste(Foundation.NSItemProvider[])
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: CanPaste(NSItemProvider[])
+  nameWithType: UIResponder.CanPaste(NSItemProvider[])
+  fullName: UIKit.UIResponder.CanPaste(Foundation.NSItemProvider[])
+  nameWithType.vb: UIResponder.CanPaste(NSItemProvider())
+  fullName.vb: UIKit.UIResponder.CanPaste(Foundation.NSItemProvider())
+  name.vb: CanPaste(NSItemProvider())
+  spec.csharp:
+  - uid: UIKit.UIResponder.CanPaste(Foundation.NSItemProvider[])
+    name: CanPaste
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSItemProvider
+    name: NSItemProvider
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.CanPaste(Foundation.NSItemProvider[])
+    name: CanPaste
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSItemProvider
+    name: NSItemProvider
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: UIKit.UIResponder.CaptureTextFromCamera(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.CaptureTextFromCamera(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: CaptureTextFromCamera(NSObject)
+  nameWithType: UIResponder.CaptureTextFromCamera(NSObject)
+  fullName: UIKit.UIResponder.CaptureTextFromCamera(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.CaptureTextFromCamera(Foundation.NSObject)
+    name: CaptureTextFromCamera
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.CaptureTextFromCamera(Foundation.NSObject)
+    name: CaptureTextFromCamera
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.ClearTextInputContextIdentifier(Foundation.NSString)
+  commentId: M:UIKit.UIResponder.ClearTextInputContextIdentifier(Foundation.NSString)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: ClearTextInputContextIdentifier(NSString)
+  nameWithType: UIResponder.ClearTextInputContextIdentifier(NSString)
+  fullName: UIKit.UIResponder.ClearTextInputContextIdentifier(Foundation.NSString)
+  spec.csharp:
+  - uid: UIKit.UIResponder.ClearTextInputContextIdentifier(Foundation.NSString)
+    name: ClearTextInputContextIdentifier
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.ClearTextInputContextIdentifier(Foundation.NSString)
+    name: ClearTextInputContextIdentifier
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Copy(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.Copy(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Copy(NSObject)
+  nameWithType: UIResponder.Copy(NSObject)
+  fullName: UIKit.UIResponder.Copy(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.Copy(Foundation.NSObject)
+    name: Copy
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Copy(Foundation.NSObject)
+    name: Copy
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Cut(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.Cut(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Cut(NSObject)
+  nameWithType: UIResponder.Cut(NSObject)
+  fullName: UIKit.UIResponder.Cut(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.Cut(Foundation.NSObject)
+    name: Cut
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Cut(Foundation.NSObject)
+    name: Cut
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.DecreaseSize(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.DecreaseSize(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: DecreaseSize(NSObject)
+  nameWithType: UIResponder.DecreaseSize(NSObject)
+  fullName: UIKit.UIResponder.DecreaseSize(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.DecreaseSize(Foundation.NSObject)
+    name: DecreaseSize
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.DecreaseSize(Foundation.NSObject)
+    name: DecreaseSize
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Delete(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.Delete(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Delete(NSObject)
+  nameWithType: UIResponder.Delete(NSObject)
+  fullName: UIKit.UIResponder.Delete(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.Delete(Foundation.NSObject)
+    name: Delete
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Delete(Foundation.NSObject)
+    name: Delete
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Duplicate(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.Duplicate(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Duplicate(NSObject)
+  nameWithType: UIResponder.Duplicate(NSObject)
+  fullName: UIKit.UIResponder.Duplicate(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.Duplicate(Foundation.NSObject)
+    name: Duplicate
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Duplicate(Foundation.NSObject)
+    name: Duplicate
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Export(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.Export(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Export(NSObject)
+  nameWithType: UIResponder.Export(NSObject)
+  fullName: UIKit.UIResponder.Export(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.Export(Foundation.NSObject)
+    name: Export
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Export(Foundation.NSObject)
+    name: Export
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Find(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.Find(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Find(NSObject)
+  nameWithType: UIResponder.Find(NSObject)
+  fullName: UIKit.UIResponder.Find(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.Find(Foundation.NSObject)
+    name: Find
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Find(Foundation.NSObject)
+    name: Find
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.FindAndReplace(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.FindAndReplace(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: FindAndReplace(NSObject)
+  nameWithType: UIResponder.FindAndReplace(NSObject)
+  fullName: UIKit.UIResponder.FindAndReplace(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.FindAndReplace(Foundation.NSObject)
+    name: FindAndReplace
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.FindAndReplace(Foundation.NSObject)
+    name: FindAndReplace
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.FindNext(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.FindNext(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: FindNext(NSObject)
+  nameWithType: UIResponder.FindNext(NSObject)
+  fullName: UIKit.UIResponder.FindNext(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.FindNext(Foundation.NSObject)
+    name: FindNext
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.FindNext(Foundation.NSObject)
+    name: FindNext
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.FindPrevious(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.FindPrevious(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: FindPrevious(NSObject)
+  nameWithType: UIResponder.FindPrevious(NSObject)
+  fullName: UIKit.UIResponder.FindPrevious(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.FindPrevious(Foundation.NSObject)
+    name: FindPrevious
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.FindPrevious(Foundation.NSObject)
+    name: FindPrevious
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.GetTargetForAction(ObjCRuntime.Selector,Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.GetTargetForAction(ObjCRuntime.Selector,Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: GetTargetForAction(Selector, NSObject)
+  nameWithType: UIResponder.GetTargetForAction(Selector, NSObject)
+  fullName: UIKit.UIResponder.GetTargetForAction(ObjCRuntime.Selector, Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.GetTargetForAction(ObjCRuntime.Selector,Foundation.NSObject)
+    name: GetTargetForAction
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.GetTargetForAction(ObjCRuntime.Selector,Foundation.NSObject)
+    name: GetTargetForAction
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.IncreaseSize(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.IncreaseSize(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: IncreaseSize(NSObject)
+  nameWithType: UIResponder.IncreaseSize(NSObject)
+  fullName: UIKit.UIResponder.IncreaseSize(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.IncreaseSize(Foundation.NSObject)
+    name: IncreaseSize
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.IncreaseSize(Foundation.NSObject)
+    name: IncreaseSize
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.MakeTextWritingDirectionLeftToRight(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.MakeTextWritingDirectionLeftToRight(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: MakeTextWritingDirectionLeftToRight(NSObject)
+  nameWithType: UIResponder.MakeTextWritingDirectionLeftToRight(NSObject)
+  fullName: UIKit.UIResponder.MakeTextWritingDirectionLeftToRight(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.MakeTextWritingDirectionLeftToRight(Foundation.NSObject)
+    name: MakeTextWritingDirectionLeftToRight
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.MakeTextWritingDirectionLeftToRight(Foundation.NSObject)
+    name: MakeTextWritingDirectionLeftToRight
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.MakeTextWritingDirectionRightToLeft(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.MakeTextWritingDirectionRightToLeft(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: MakeTextWritingDirectionRightToLeft(NSObject)
+  nameWithType: UIResponder.MakeTextWritingDirectionRightToLeft(NSObject)
+  fullName: UIKit.UIResponder.MakeTextWritingDirectionRightToLeft(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.MakeTextWritingDirectionRightToLeft(Foundation.NSObject)
+    name: MakeTextWritingDirectionRightToLeft
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.MakeTextWritingDirectionRightToLeft(Foundation.NSObject)
+    name: MakeTextWritingDirectionRightToLeft
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.MotionBegan(UIKit.UIEventSubtype,UIKit.UIEvent)
+  commentId: M:UIKit.UIResponder.MotionBegan(UIKit.UIEventSubtype,UIKit.UIEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: MotionBegan(UIEventSubtype, UIEvent)
+  nameWithType: UIResponder.MotionBegan(UIEventSubtype, UIEvent)
+  fullName: UIKit.UIResponder.MotionBegan(UIKit.UIEventSubtype, UIKit.UIEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.MotionBegan(UIKit.UIEventSubtype,UIKit.UIEvent)
+    name: MotionBegan
+    isExternal: true
+  - name: (
+  - uid: UIKit.UIEventSubtype
+    name: UIEventSubtype
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.MotionBegan(UIKit.UIEventSubtype,UIKit.UIEvent)
+    name: MotionBegan
+    isExternal: true
+  - name: (
+  - uid: UIKit.UIEventSubtype
+    name: UIEventSubtype
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.MotionCancelled(UIKit.UIEventSubtype,UIKit.UIEvent)
+  commentId: M:UIKit.UIResponder.MotionCancelled(UIKit.UIEventSubtype,UIKit.UIEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: MotionCancelled(UIEventSubtype, UIEvent)
+  nameWithType: UIResponder.MotionCancelled(UIEventSubtype, UIEvent)
+  fullName: UIKit.UIResponder.MotionCancelled(UIKit.UIEventSubtype, UIKit.UIEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.MotionCancelled(UIKit.UIEventSubtype,UIKit.UIEvent)
+    name: MotionCancelled
+    isExternal: true
+  - name: (
+  - uid: UIKit.UIEventSubtype
+    name: UIEventSubtype
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.MotionCancelled(UIKit.UIEventSubtype,UIKit.UIEvent)
+    name: MotionCancelled
+    isExternal: true
+  - name: (
+  - uid: UIKit.UIEventSubtype
+    name: UIEventSubtype
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.MotionEnded(UIKit.UIEventSubtype,UIKit.UIEvent)
+  commentId: M:UIKit.UIResponder.MotionEnded(UIKit.UIEventSubtype,UIKit.UIEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: MotionEnded(UIEventSubtype, UIEvent)
+  nameWithType: UIResponder.MotionEnded(UIEventSubtype, UIEvent)
+  fullName: UIKit.UIResponder.MotionEnded(UIKit.UIEventSubtype, UIKit.UIEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.MotionEnded(UIKit.UIEventSubtype,UIKit.UIEvent)
+    name: MotionEnded
+    isExternal: true
+  - name: (
+  - uid: UIKit.UIEventSubtype
+    name: UIEventSubtype
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.MotionEnded(UIKit.UIEventSubtype,UIKit.UIEvent)
+    name: MotionEnded
+    isExternal: true
+  - name: (
+  - uid: UIKit.UIEventSubtype
+    name: UIEventSubtype
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Move(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.Move(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Move(NSObject)
+  nameWithType: UIResponder.Move(NSObject)
+  fullName: UIKit.UIResponder.Move(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.Move(Foundation.NSObject)
+    name: Move
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Move(Foundation.NSObject)
+    name: Move
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Paste(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.Paste(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Paste(NSObject)
+  nameWithType: UIResponder.Paste(NSObject)
+  fullName: UIKit.UIResponder.Paste(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.Paste(Foundation.NSObject)
+    name: Paste
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Paste(Foundation.NSObject)
+    name: Paste
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Paste(Foundation.NSItemProvider[])
+  commentId: M:UIKit.UIResponder.Paste(Foundation.NSItemProvider[])
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Paste(NSItemProvider[])
+  nameWithType: UIResponder.Paste(NSItemProvider[])
+  fullName: UIKit.UIResponder.Paste(Foundation.NSItemProvider[])
+  nameWithType.vb: UIResponder.Paste(NSItemProvider())
+  fullName.vb: UIKit.UIResponder.Paste(Foundation.NSItemProvider())
+  name.vb: Paste(NSItemProvider())
+  spec.csharp:
+  - uid: UIKit.UIResponder.Paste(Foundation.NSItemProvider[])
+    name: Paste
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSItemProvider
+    name: NSItemProvider
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Paste(Foundation.NSItemProvider[])
+    name: Paste
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSItemProvider
+    name: NSItemProvider
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: UIKit.UIResponder.PasteAndGo(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.PasteAndGo(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: PasteAndGo(NSObject)
+  nameWithType: UIResponder.PasteAndGo(NSObject)
+  fullName: UIKit.UIResponder.PasteAndGo(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.PasteAndGo(Foundation.NSObject)
+    name: PasteAndGo
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.PasteAndGo(Foundation.NSObject)
+    name: PasteAndGo
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.PasteAndMatchStyle(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.PasteAndMatchStyle(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: PasteAndMatchStyle(NSObject)
+  nameWithType: UIResponder.PasteAndMatchStyle(NSObject)
+  fullName: UIKit.UIResponder.PasteAndMatchStyle(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.PasteAndMatchStyle(Foundation.NSObject)
+    name: PasteAndMatchStyle
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.PasteAndMatchStyle(Foundation.NSObject)
+    name: PasteAndMatchStyle
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.PasteAndSearch(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.PasteAndSearch(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: PasteAndSearch(NSObject)
+  nameWithType: UIResponder.PasteAndSearch(NSObject)
+  fullName: UIKit.UIResponder.PasteAndSearch(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.PasteAndSearch(Foundation.NSObject)
+    name: PasteAndSearch
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.PasteAndSearch(Foundation.NSObject)
+    name: PasteAndSearch
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.PressesBegan(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  commentId: M:UIKit.UIResponder.PressesBegan(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: PressesBegan(NSSet<UIPress>, UIPressesEvent)
+  nameWithType: UIResponder.PressesBegan(NSSet<UIPress>, UIPressesEvent)
+  fullName: UIKit.UIResponder.PressesBegan(Foundation.NSSet<UIKit.UIPress>, UIKit.UIPressesEvent)
+  nameWithType.vb: UIResponder.PressesBegan(NSSet(Of UIPress), UIPressesEvent)
+  fullName.vb: UIKit.UIResponder.PressesBegan(Foundation.NSSet(Of UIKit.UIPress), UIKit.UIPressesEvent)
+  name.vb: PressesBegan(NSSet(Of UIPress), UIPressesEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.PressesBegan(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+    name: PressesBegan
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet`1
+    name: NSSet
+    isExternal: true
+  - name: <
+  - uid: UIKit.UIPress
+    name: UIPress
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIPressesEvent
+    name: UIPressesEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.PressesBegan(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+    name: PressesBegan
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet`1
+    name: NSSet
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UIKit.UIPress
+    name: UIPress
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIPressesEvent
+    name: UIPressesEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.PressesCancelled(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  commentId: M:UIKit.UIResponder.PressesCancelled(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: PressesCancelled(NSSet<UIPress>, UIPressesEvent)
+  nameWithType: UIResponder.PressesCancelled(NSSet<UIPress>, UIPressesEvent)
+  fullName: UIKit.UIResponder.PressesCancelled(Foundation.NSSet<UIKit.UIPress>, UIKit.UIPressesEvent)
+  nameWithType.vb: UIResponder.PressesCancelled(NSSet(Of UIPress), UIPressesEvent)
+  fullName.vb: UIKit.UIResponder.PressesCancelled(Foundation.NSSet(Of UIKit.UIPress), UIKit.UIPressesEvent)
+  name.vb: PressesCancelled(NSSet(Of UIPress), UIPressesEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.PressesCancelled(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+    name: PressesCancelled
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet`1
+    name: NSSet
+    isExternal: true
+  - name: <
+  - uid: UIKit.UIPress
+    name: UIPress
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIPressesEvent
+    name: UIPressesEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.PressesCancelled(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+    name: PressesCancelled
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet`1
+    name: NSSet
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UIKit.UIPress
+    name: UIPress
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIPressesEvent
+    name: UIPressesEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.PressesChanged(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  commentId: M:UIKit.UIResponder.PressesChanged(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: PressesChanged(NSSet<UIPress>, UIPressesEvent)
+  nameWithType: UIResponder.PressesChanged(NSSet<UIPress>, UIPressesEvent)
+  fullName: UIKit.UIResponder.PressesChanged(Foundation.NSSet<UIKit.UIPress>, UIKit.UIPressesEvent)
+  nameWithType.vb: UIResponder.PressesChanged(NSSet(Of UIPress), UIPressesEvent)
+  fullName.vb: UIKit.UIResponder.PressesChanged(Foundation.NSSet(Of UIKit.UIPress), UIKit.UIPressesEvent)
+  name.vb: PressesChanged(NSSet(Of UIPress), UIPressesEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.PressesChanged(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+    name: PressesChanged
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet`1
+    name: NSSet
+    isExternal: true
+  - name: <
+  - uid: UIKit.UIPress
+    name: UIPress
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIPressesEvent
+    name: UIPressesEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.PressesChanged(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+    name: PressesChanged
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet`1
+    name: NSSet
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UIKit.UIPress
+    name: UIPress
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIPressesEvent
+    name: UIPressesEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.PressesEnded(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  commentId: M:UIKit.UIResponder.PressesEnded(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: PressesEnded(NSSet<UIPress>, UIPressesEvent)
+  nameWithType: UIResponder.PressesEnded(NSSet<UIPress>, UIPressesEvent)
+  fullName: UIKit.UIResponder.PressesEnded(Foundation.NSSet<UIKit.UIPress>, UIKit.UIPressesEvent)
+  nameWithType.vb: UIResponder.PressesEnded(NSSet(Of UIPress), UIPressesEvent)
+  fullName.vb: UIKit.UIResponder.PressesEnded(Foundation.NSSet(Of UIKit.UIPress), UIKit.UIPressesEvent)
+  name.vb: PressesEnded(NSSet(Of UIPress), UIPressesEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.PressesEnded(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+    name: PressesEnded
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet`1
+    name: NSSet
+    isExternal: true
+  - name: <
+  - uid: UIKit.UIPress
+    name: UIPress
+    isExternal: true
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIPressesEvent
+    name: UIPressesEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.PressesEnded(Foundation.NSSet{UIKit.UIPress},UIKit.UIPressesEvent)
+    name: PressesEnded
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet`1
+    name: NSSet
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UIKit.UIPress
+    name: UIPress
+    isExternal: true
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIPressesEvent
+    name: UIPressesEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Print(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.Print(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Print(NSObject)
+  nameWithType: UIResponder.Print(NSObject)
+  fullName: UIKit.UIResponder.Print(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.Print(Foundation.NSObject)
+    name: Print
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Print(Foundation.NSObject)
+    name: Print
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.ReloadInputViews
+  commentId: M:UIKit.UIResponder.ReloadInputViews
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: ReloadInputViews()
+  nameWithType: UIResponder.ReloadInputViews()
+  fullName: UIKit.UIResponder.ReloadInputViews()
+  spec.csharp:
+  - uid: UIKit.UIResponder.ReloadInputViews
+    name: ReloadInputViews
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.ReloadInputViews
+    name: ReloadInputViews
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UIKit.UIResponder.RemoteControlReceived(UIKit.UIEvent)
+  commentId: M:UIKit.UIResponder.RemoteControlReceived(UIKit.UIEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: RemoteControlReceived(UIEvent)
+  nameWithType: UIResponder.RemoteControlReceived(UIEvent)
+  fullName: UIKit.UIResponder.RemoteControlReceived(UIKit.UIEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.RemoteControlReceived(UIKit.UIEvent)
+    name: RemoteControlReceived
+    isExternal: true
+  - name: (
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.RemoteControlReceived(UIKit.UIEvent)
+    name: RemoteControlReceived
+    isExternal: true
+  - name: (
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Rename(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.Rename(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Rename(NSObject)
+  nameWithType: UIResponder.Rename(NSObject)
+  fullName: UIKit.UIResponder.Rename(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.Rename(Foundation.NSObject)
+    name: Rename
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Rename(Foundation.NSObject)
+    name: Rename
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.ResignFirstResponder
+  commentId: M:UIKit.UIResponder.ResignFirstResponder
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: ResignFirstResponder()
+  nameWithType: UIResponder.ResignFirstResponder()
+  fullName: UIKit.UIResponder.ResignFirstResponder()
+  spec.csharp:
+  - uid: UIKit.UIResponder.ResignFirstResponder
+    name: ResignFirstResponder
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.ResignFirstResponder
+    name: ResignFirstResponder
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UIKit.UIResponder.RestoreUserActivityState(Foundation.NSUserActivity)
+  commentId: M:UIKit.UIResponder.RestoreUserActivityState(Foundation.NSUserActivity)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: RestoreUserActivityState(NSUserActivity)
+  nameWithType: UIResponder.RestoreUserActivityState(NSUserActivity)
+  fullName: UIKit.UIResponder.RestoreUserActivityState(Foundation.NSUserActivity)
+  spec.csharp:
+  - uid: UIKit.UIResponder.RestoreUserActivityState(Foundation.NSUserActivity)
+    name: RestoreUserActivityState
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSUserActivity
+    name: NSUserActivity
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.RestoreUserActivityState(Foundation.NSUserActivity)
+    name: RestoreUserActivityState
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSUserActivity
+    name: NSUserActivity
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.Select(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.Select(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: Select(NSObject)
+  nameWithType: UIResponder.Select(NSObject)
+  fullName: UIKit.UIResponder.Select(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.Select(Foundation.NSObject)
+    name: Select
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.Select(Foundation.NSObject)
+    name: Select
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.SelectAll(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.SelectAll(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: SelectAll(NSObject)
+  nameWithType: UIResponder.SelectAll(NSObject)
+  fullName: UIKit.UIResponder.SelectAll(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.SelectAll(Foundation.NSObject)
+    name: SelectAll
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.SelectAll(Foundation.NSObject)
+    name: SelectAll
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.ToggleBoldface(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.ToggleBoldface(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: ToggleBoldface(NSObject)
+  nameWithType: UIResponder.ToggleBoldface(NSObject)
+  fullName: UIKit.UIResponder.ToggleBoldface(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.ToggleBoldface(Foundation.NSObject)
+    name: ToggleBoldface
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.ToggleBoldface(Foundation.NSObject)
+    name: ToggleBoldface
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.ToggleItalics(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.ToggleItalics(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: ToggleItalics(NSObject)
+  nameWithType: UIResponder.ToggleItalics(NSObject)
+  fullName: UIKit.UIResponder.ToggleItalics(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.ToggleItalics(Foundation.NSObject)
+    name: ToggleItalics
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.ToggleItalics(Foundation.NSObject)
+    name: ToggleItalics
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.ToggleUnderline(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.ToggleUnderline(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: ToggleUnderline(NSObject)
+  nameWithType: UIResponder.ToggleUnderline(NSObject)
+  fullName: UIKit.UIResponder.ToggleUnderline(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.ToggleUnderline(Foundation.NSObject)
+    name: ToggleUnderline
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.ToggleUnderline(Foundation.NSObject)
+    name: ToggleUnderline
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.TouchesBegan(Foundation.NSSet,UIKit.UIEvent)
+  commentId: M:UIKit.UIResponder.TouchesBegan(Foundation.NSSet,UIKit.UIEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: TouchesBegan(NSSet, UIEvent)
+  nameWithType: UIResponder.TouchesBegan(NSSet, UIEvent)
+  fullName: UIKit.UIResponder.TouchesBegan(Foundation.NSSet, UIKit.UIEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.TouchesBegan(Foundation.NSSet,UIKit.UIEvent)
+    name: TouchesBegan
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.TouchesBegan(Foundation.NSSet,UIKit.UIEvent)
+    name: TouchesBegan
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.TouchesCancelled(Foundation.NSSet,UIKit.UIEvent)
+  commentId: M:UIKit.UIResponder.TouchesCancelled(Foundation.NSSet,UIKit.UIEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: TouchesCancelled(NSSet, UIEvent)
+  nameWithType: UIResponder.TouchesCancelled(NSSet, UIEvent)
+  fullName: UIKit.UIResponder.TouchesCancelled(Foundation.NSSet, UIKit.UIEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.TouchesCancelled(Foundation.NSSet,UIKit.UIEvent)
+    name: TouchesCancelled
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.TouchesCancelled(Foundation.NSSet,UIKit.UIEvent)
+    name: TouchesCancelled
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.TouchesEnded(Foundation.NSSet,UIKit.UIEvent)
+  commentId: M:UIKit.UIResponder.TouchesEnded(Foundation.NSSet,UIKit.UIEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: TouchesEnded(NSSet, UIEvent)
+  nameWithType: UIResponder.TouchesEnded(NSSet, UIEvent)
+  fullName: UIKit.UIResponder.TouchesEnded(Foundation.NSSet, UIKit.UIEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.TouchesEnded(Foundation.NSSet,UIKit.UIEvent)
+    name: TouchesEnded
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.TouchesEnded(Foundation.NSSet,UIKit.UIEvent)
+    name: TouchesEnded
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.TouchesEstimatedPropertiesUpdated(Foundation.NSSet)
+  commentId: M:UIKit.UIResponder.TouchesEstimatedPropertiesUpdated(Foundation.NSSet)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: TouchesEstimatedPropertiesUpdated(NSSet)
+  nameWithType: UIResponder.TouchesEstimatedPropertiesUpdated(NSSet)
+  fullName: UIKit.UIResponder.TouchesEstimatedPropertiesUpdated(Foundation.NSSet)
+  spec.csharp:
+  - uid: UIKit.UIResponder.TouchesEstimatedPropertiesUpdated(Foundation.NSSet)
+    name: TouchesEstimatedPropertiesUpdated
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.TouchesEstimatedPropertiesUpdated(Foundation.NSSet)
+    name: TouchesEstimatedPropertiesUpdated
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.TouchesMoved(Foundation.NSSet,UIKit.UIEvent)
+  commentId: M:UIKit.UIResponder.TouchesMoved(Foundation.NSSet,UIKit.UIEvent)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: TouchesMoved(NSSet, UIEvent)
+  nameWithType: UIResponder.TouchesMoved(NSSet, UIEvent)
+  fullName: UIKit.UIResponder.TouchesMoved(Foundation.NSSet, UIKit.UIEvent)
+  spec.csharp:
+  - uid: UIKit.UIResponder.TouchesMoved(Foundation.NSSet,UIKit.UIEvent)
+    name: TouchesMoved
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.TouchesMoved(Foundation.NSSet,UIKit.UIEvent)
+    name: TouchesMoved
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UIKit.UIEvent
+    name: UIEvent
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.UpdateTextAttributes(UIKit.UITextAttributesConversionHandler)
+  commentId: M:UIKit.UIResponder.UpdateTextAttributes(UIKit.UITextAttributesConversionHandler)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: UpdateTextAttributes(UITextAttributesConversionHandler)
+  nameWithType: UIResponder.UpdateTextAttributes(UITextAttributesConversionHandler)
+  fullName: UIKit.UIResponder.UpdateTextAttributes(UIKit.UITextAttributesConversionHandler)
+  spec.csharp:
+  - uid: UIKit.UIResponder.UpdateTextAttributes(UIKit.UITextAttributesConversionHandler)
+    name: UpdateTextAttributes
+    isExternal: true
+  - name: (
+  - uid: UIKit.UITextAttributesConversionHandler
+    name: UITextAttributesConversionHandler
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.UpdateTextAttributes(UIKit.UITextAttributesConversionHandler)
+    name: UpdateTextAttributes
+    isExternal: true
+  - name: (
+  - uid: UIKit.UITextAttributesConversionHandler
+    name: UITextAttributesConversionHandler
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.UpdateUserActivityState(Foundation.NSUserActivity)
+  commentId: M:UIKit.UIResponder.UpdateUserActivityState(Foundation.NSUserActivity)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: UpdateUserActivityState(NSUserActivity)
+  nameWithType: UIResponder.UpdateUserActivityState(NSUserActivity)
+  fullName: UIKit.UIResponder.UpdateUserActivityState(Foundation.NSUserActivity)
+  spec.csharp:
+  - uid: UIKit.UIResponder.UpdateUserActivityState(Foundation.NSUserActivity)
+    name: UpdateUserActivityState
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSUserActivity
+    name: NSUserActivity
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.UpdateUserActivityState(Foundation.NSUserActivity)
+    name: UpdateUserActivityState
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSUserActivity
+    name: NSUserActivity
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.UseSelectionForFind(Foundation.NSObject)
+  commentId: M:UIKit.UIResponder.UseSelectionForFind(Foundation.NSObject)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: UseSelectionForFind(NSObject)
+  nameWithType: UIResponder.UseSelectionForFind(NSObject)
+  fullName: UIKit.UIResponder.UseSelectionForFind(Foundation.NSObject)
+  spec.csharp:
+  - uid: UIKit.UIResponder.UseSelectionForFind(Foundation.NSObject)
+    name: UseSelectionForFind
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.UseSelectionForFind(Foundation.NSObject)
+    name: UseSelectionForFind
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.ValidateCommand(UIKit.UICommand)
+  commentId: M:UIKit.UIResponder.ValidateCommand(UIKit.UICommand)
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: ValidateCommand(UICommand)
+  nameWithType: UIResponder.ValidateCommand(UICommand)
+  fullName: UIKit.UIResponder.ValidateCommand(UIKit.UICommand)
+  spec.csharp:
+  - uid: UIKit.UIResponder.ValidateCommand(UIKit.UICommand)
+    name: ValidateCommand
+    isExternal: true
+  - name: (
+  - uid: UIKit.UICommand
+    name: UICommand
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UIKit.UIResponder.ValidateCommand(UIKit.UICommand)
+    name: ValidateCommand
+    isExternal: true
+  - name: (
+  - uid: UIKit.UICommand
+    name: UICommand
+    isExternal: true
+  - name: )
+- uid: UIKit.UIResponder.ClassHandle
+  commentId: P:UIKit.UIResponder.ClassHandle
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: ClassHandle
+  nameWithType: UIResponder.ClassHandle
+  fullName: UIKit.UIResponder.ClassHandle
+- uid: UIKit.UIResponder.AccessibilityAssistiveTechnologyFocusedIdentifiers
+  commentId: P:UIKit.UIResponder.AccessibilityAssistiveTechnologyFocusedIdentifiers
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityAssistiveTechnologyFocusedIdentifiers
+  nameWithType: UIResponder.AccessibilityAssistiveTechnologyFocusedIdentifiers
+  fullName: UIKit.UIResponder.AccessibilityAssistiveTechnologyFocusedIdentifiers
+- uid: UIKit.UIResponder.AccessibilityCustomActions
+  commentId: P:UIKit.UIResponder.AccessibilityCustomActions
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityCustomActions
+  nameWithType: UIResponder.AccessibilityCustomActions
+  fullName: UIKit.UIResponder.AccessibilityCustomActions
+- uid: UIKit.UIResponder.AccessibilityDragSourceDescriptors
+  commentId: P:UIKit.UIResponder.AccessibilityDragSourceDescriptors
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityDragSourceDescriptors
+  nameWithType: UIResponder.AccessibilityDragSourceDescriptors
+  fullName: UIKit.UIResponder.AccessibilityDragSourceDescriptors
+- uid: UIKit.UIResponder.AccessibilityDropPointDescriptors
+  commentId: P:UIKit.UIResponder.AccessibilityDropPointDescriptors
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: AccessibilityDropPointDescriptors
+  nameWithType: UIResponder.AccessibilityDropPointDescriptors
+  fullName: UIKit.UIResponder.AccessibilityDropPointDescriptors
+- uid: UIKit.UIResponder.ActivityItemsConfiguration
+  commentId: P:UIKit.UIResponder.ActivityItemsConfiguration
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: ActivityItemsConfiguration
+  nameWithType: UIResponder.ActivityItemsConfiguration
+  fullName: UIKit.UIResponder.ActivityItemsConfiguration
+- uid: UIKit.UIResponder.CanBecomeFirstResponder
+  commentId: P:UIKit.UIResponder.CanBecomeFirstResponder
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: CanBecomeFirstResponder
+  nameWithType: UIResponder.CanBecomeFirstResponder
+  fullName: UIKit.UIResponder.CanBecomeFirstResponder
+- uid: UIKit.UIResponder.CanResignFirstResponder
+  commentId: P:UIKit.UIResponder.CanResignFirstResponder
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: CanResignFirstResponder
+  nameWithType: UIResponder.CanResignFirstResponder
+  fullName: UIKit.UIResponder.CanResignFirstResponder
+- uid: UIKit.UIResponder.EditingInteractionConfiguration
+  commentId: P:UIKit.UIResponder.EditingInteractionConfiguration
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: EditingInteractionConfiguration
+  nameWithType: UIResponder.EditingInteractionConfiguration
+  fullName: UIKit.UIResponder.EditingInteractionConfiguration
+- uid: UIKit.UIResponder.InputAccessoryView
+  commentId: P:UIKit.UIResponder.InputAccessoryView
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: InputAccessoryView
+  nameWithType: UIResponder.InputAccessoryView
+  fullName: UIKit.UIResponder.InputAccessoryView
+- uid: UIKit.UIResponder.InputAccessoryViewController
+  commentId: P:UIKit.UIResponder.InputAccessoryViewController
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: InputAccessoryViewController
+  nameWithType: UIResponder.InputAccessoryViewController
+  fullName: UIKit.UIResponder.InputAccessoryViewController
+- uid: UIKit.UIResponder.InputAssistantItem
+  commentId: P:UIKit.UIResponder.InputAssistantItem
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: InputAssistantItem
+  nameWithType: UIResponder.InputAssistantItem
+  fullName: UIKit.UIResponder.InputAssistantItem
+- uid: UIKit.UIResponder.InputView
+  commentId: P:UIKit.UIResponder.InputView
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: InputView
+  nameWithType: UIResponder.InputView
+  fullName: UIKit.UIResponder.InputView
+- uid: UIKit.UIResponder.InputViewController
+  commentId: P:UIKit.UIResponder.InputViewController
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: InputViewController
+  nameWithType: UIResponder.InputViewController
+  fullName: UIKit.UIResponder.InputViewController
+- uid: UIKit.UIResponder.IsFirstResponder
+  commentId: P:UIKit.UIResponder.IsFirstResponder
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: IsFirstResponder
+  nameWithType: UIResponder.IsFirstResponder
+  fullName: UIKit.UIResponder.IsFirstResponder
+- uid: UIKit.UIResponder.KeyCommands
+  commentId: P:UIKit.UIResponder.KeyCommands
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: KeyCommands
+  nameWithType: UIResponder.KeyCommands
+  fullName: UIKit.UIResponder.KeyCommands
+- uid: UIKit.UIResponder.NextResponder
+  commentId: P:UIKit.UIResponder.NextResponder
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: NextResponder
+  nameWithType: UIResponder.NextResponder
+  fullName: UIKit.UIResponder.NextResponder
+- uid: UIKit.UIResponder.PasteConfiguration
+  commentId: P:UIKit.UIResponder.PasteConfiguration
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: PasteConfiguration
+  nameWithType: UIResponder.PasteConfiguration
+  fullName: UIKit.UIResponder.PasteConfiguration
+- uid: UIKit.UIResponder.TextInputContextIdentifier
+  commentId: P:UIKit.UIResponder.TextInputContextIdentifier
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: TextInputContextIdentifier
+  nameWithType: UIResponder.TextInputContextIdentifier
+  fullName: UIKit.UIResponder.TextInputContextIdentifier
+- uid: UIKit.UIResponder.TextInputMode
+  commentId: P:UIKit.UIResponder.TextInputMode
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: TextInputMode
+  nameWithType: UIResponder.TextInputMode
+  fullName: UIKit.UIResponder.TextInputMode
+- uid: UIKit.UIResponder.UndoManager
+  commentId: P:UIKit.UIResponder.UndoManager
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: UndoManager
+  nameWithType: UIResponder.UndoManager
+  fullName: UIKit.UIResponder.UndoManager
+- uid: UIKit.UIResponder.UserActivity
+  commentId: P:UIKit.UIResponder.UserActivity
+  parent: UIKit.UIResponder
+  isExternal: true
+  name: UserActivity
+  nameWithType: UIResponder.UserActivity
+  fullName: UIKit.UIResponder.UserActivity
+- uid: Foundation.NSObject.PlatformAssembly
+  commentId: F:Foundation.NSObject.PlatformAssembly
+  parent: Foundation.NSObject
+  isExternal: true
+  name: PlatformAssembly
+  nameWithType: NSObject.PlatformAssembly
+  fullName: Foundation.NSObject.PlatformAssembly
+- uid: Foundation.NSObject.Dispose
+  commentId: M:Foundation.NSObject.Dispose
+  parent: Foundation.NSObject
+  isExternal: true
+  name: Dispose()
+  nameWithType: NSObject.Dispose()
+  fullName: Foundation.NSObject.Dispose()
+  spec.csharp:
+  - uid: Foundation.NSObject.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.Dispose
+    name: Dispose
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.MarkDirty
+  commentId: M:Foundation.NSObject.MarkDirty
+  parent: Foundation.NSObject
+  isExternal: true
+  name: MarkDirty()
+  nameWithType: NSObject.MarkDirty()
+  fullName: Foundation.NSObject.MarkDirty()
+  spec.csharp:
+  - uid: Foundation.NSObject.MarkDirty
+    name: MarkDirty
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.MarkDirty
+    name: MarkDirty
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.ConformsToProtocol(ObjCRuntime.NativeHandle)
+  commentId: M:Foundation.NSObject.ConformsToProtocol(ObjCRuntime.NativeHandle)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: ConformsToProtocol(NativeHandle)
+  nameWithType: NSObject.ConformsToProtocol(NativeHandle)
+  fullName: Foundation.NSObject.ConformsToProtocol(ObjCRuntime.NativeHandle)
+  spec.csharp:
+  - uid: Foundation.NSObject.ConformsToProtocol(ObjCRuntime.NativeHandle)
+    name: ConformsToProtocol
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.NativeHandle
+    name: NativeHandle
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.ConformsToProtocol(ObjCRuntime.NativeHandle)
+    name: ConformsToProtocol
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.NativeHandle
+    name: NativeHandle
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.DangerousRelease
+  commentId: M:Foundation.NSObject.DangerousRelease
+  parent: Foundation.NSObject
+  isExternal: true
+  name: DangerousRelease()
+  nameWithType: NSObject.DangerousRelease()
+  fullName: Foundation.NSObject.DangerousRelease()
+  spec.csharp:
+  - uid: Foundation.NSObject.DangerousRelease
+    name: DangerousRelease
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.DangerousRelease
+    name: DangerousRelease
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.DangerousRetain
+  commentId: M:Foundation.NSObject.DangerousRetain
+  parent: Foundation.NSObject
+  isExternal: true
+  name: DangerousRetain()
+  nameWithType: NSObject.DangerousRetain()
+  fullName: Foundation.NSObject.DangerousRetain()
+  spec.csharp:
+  - uid: Foundation.NSObject.DangerousRetain
+    name: DangerousRetain
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.DangerousRetain
+    name: DangerousRetain
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.DangerousAutorelease
+  commentId: M:Foundation.NSObject.DangerousAutorelease
+  parent: Foundation.NSObject
+  isExternal: true
+  name: DangerousAutorelease()
+  nameWithType: NSObject.DangerousAutorelease()
+  fullName: Foundation.NSObject.DangerousAutorelease()
+  spec.csharp:
+  - uid: Foundation.NSObject.DangerousAutorelease
+    name: DangerousAutorelease
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.DangerousAutorelease
+    name: DangerousAutorelease
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.BeginInvokeOnMainThread(ObjCRuntime.Selector,Foundation.NSObject)
+  commentId: M:Foundation.NSObject.BeginInvokeOnMainThread(ObjCRuntime.Selector,Foundation.NSObject)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: BeginInvokeOnMainThread(Selector, NSObject)
+  nameWithType: NSObject.BeginInvokeOnMainThread(Selector, NSObject)
+  fullName: Foundation.NSObject.BeginInvokeOnMainThread(ObjCRuntime.Selector, Foundation.NSObject)
+  spec.csharp:
+  - uid: Foundation.NSObject.BeginInvokeOnMainThread(ObjCRuntime.Selector,Foundation.NSObject)
+    name: BeginInvokeOnMainThread
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.BeginInvokeOnMainThread(ObjCRuntime.Selector,Foundation.NSObject)
+    name: BeginInvokeOnMainThread
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.InvokeOnMainThread(ObjCRuntime.Selector,Foundation.NSObject)
+  commentId: M:Foundation.NSObject.InvokeOnMainThread(ObjCRuntime.Selector,Foundation.NSObject)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: InvokeOnMainThread(Selector, NSObject)
+  nameWithType: NSObject.InvokeOnMainThread(Selector, NSObject)
+  fullName: Foundation.NSObject.InvokeOnMainThread(ObjCRuntime.Selector, Foundation.NSObject)
+  spec.csharp:
+  - uid: Foundation.NSObject.InvokeOnMainThread(ObjCRuntime.Selector,Foundation.NSObject)
+    name: InvokeOnMainThread
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.InvokeOnMainThread(ObjCRuntime.Selector,Foundation.NSObject)
+    name: InvokeOnMainThread
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.BeginInvokeOnMainThread(System.Action)
+  commentId: M:Foundation.NSObject.BeginInvokeOnMainThread(System.Action)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: BeginInvokeOnMainThread(Action)
+  nameWithType: NSObject.BeginInvokeOnMainThread(Action)
+  fullName: Foundation.NSObject.BeginInvokeOnMainThread(System.Action)
+  spec.csharp:
+  - uid: Foundation.NSObject.BeginInvokeOnMainThread(System.Action)
+    name: BeginInvokeOnMainThread
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.BeginInvokeOnMainThread(System.Action)
+    name: BeginInvokeOnMainThread
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: Foundation.NSObject.InvokeOnMainThread(System.Action)
+  commentId: M:Foundation.NSObject.InvokeOnMainThread(System.Action)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: InvokeOnMainThread(Action)
+  nameWithType: NSObject.InvokeOnMainThread(Action)
+  fullName: Foundation.NSObject.InvokeOnMainThread(System.Action)
+  spec.csharp:
+  - uid: Foundation.NSObject.InvokeOnMainThread(System.Action)
+    name: InvokeOnMainThread
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.InvokeOnMainThread(System.Action)
+    name: InvokeOnMainThread
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: Foundation.NSObject.FromObject(System.Object)
+  commentId: M:Foundation.NSObject.FromObject(System.Object)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: FromObject(object)
+  nameWithType: NSObject.FromObject(object)
+  fullName: Foundation.NSObject.FromObject(object)
+  nameWithType.vb: NSObject.FromObject(Object)
+  fullName.vb: Foundation.NSObject.FromObject(Object)
+  name.vb: FromObject(Object)
+  spec.csharp:
+  - uid: Foundation.NSObject.FromObject(System.Object)
+    name: FromObject
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.FromObject(System.Object)
+    name: FromObject
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Foundation.NSObject.SetValueForKeyPath(ObjCRuntime.NativeHandle,Foundation.NSString)
+  commentId: M:Foundation.NSObject.SetValueForKeyPath(ObjCRuntime.NativeHandle,Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: SetValueForKeyPath(NativeHandle, NSString)
+  nameWithType: NSObject.SetValueForKeyPath(NativeHandle, NSString)
+  fullName: Foundation.NSObject.SetValueForKeyPath(ObjCRuntime.NativeHandle, Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.SetValueForKeyPath(ObjCRuntime.NativeHandle,Foundation.NSString)
+    name: SetValueForKeyPath
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.NativeHandle
+    name: NativeHandle
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.SetValueForKeyPath(ObjCRuntime.NativeHandle,Foundation.NSString)
+    name: SetValueForKeyPath
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.NativeHandle
+    name: NativeHandle
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.GetHashCode
+  commentId: M:Foundation.NSObject.GetHashCode
+  parent: Foundation.NSObject
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: NSObject.GetHashCode()
+  fullName: Foundation.NSObject.GetHashCode()
+  spec.csharp:
+  - uid: Foundation.NSObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.GetHashCode
+    name: GetHashCode
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.Equals(System.Object)
+  commentId: M:Foundation.NSObject.Equals(System.Object)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Equals(object)
+  nameWithType: NSObject.Equals(object)
+  fullName: Foundation.NSObject.Equals(object)
+  nameWithType.vb: NSObject.Equals(Object)
+  fullName.vb: Foundation.NSObject.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Foundation.NSObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.Equals(System.Object)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Foundation.NSObject.Equals(Foundation.NSObject)
+  commentId: M:Foundation.NSObject.Equals(Foundation.NSObject)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: Equals(NSObject)
+  nameWithType: NSObject.Equals(NSObject)
+  fullName: Foundation.NSObject.Equals(Foundation.NSObject)
+  spec.csharp:
+  - uid: Foundation.NSObject.Equals(Foundation.NSObject)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.Equals(Foundation.NSObject)
+    name: Equals
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.ToString
+  commentId: M:Foundation.NSObject.ToString
+  parent: Foundation.NSObject
+  isExternal: true
+  name: ToString()
+  nameWithType: NSObject.ToString()
+  fullName: Foundation.NSObject.ToString()
+  spec.csharp:
+  - uid: Foundation.NSObject.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.Invoke(System.Action,System.Double)
+  commentId: M:Foundation.NSObject.Invoke(System.Action,System.Double)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Invoke(Action, double)
+  nameWithType: NSObject.Invoke(Action, double)
+  fullName: Foundation.NSObject.Invoke(System.Action, double)
+  nameWithType.vb: NSObject.Invoke(Action, Double)
+  fullName.vb: Foundation.NSObject.Invoke(System.Action, Double)
+  name.vb: Invoke(Action, Double)
+  spec.csharp:
+  - uid: Foundation.NSObject.Invoke(System.Action,System.Double)
+    name: Invoke
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.Invoke(System.Action,System.Double)
+    name: Invoke
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: Foundation.NSObject.Invoke(System.Action,System.TimeSpan)
+  commentId: M:Foundation.NSObject.Invoke(System.Action,System.TimeSpan)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Invoke(Action, TimeSpan)
+  nameWithType: NSObject.Invoke(Action, TimeSpan)
+  fullName: Foundation.NSObject.Invoke(System.Action, System.TimeSpan)
+  spec.csharp:
+  - uid: Foundation.NSObject.Invoke(System.Action,System.TimeSpan)
+    name: Invoke
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.Invoke(System.Action,System.TimeSpan)
+    name: Invoke
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: ','
+  - name: " "
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: )
+- uid: Foundation.NSObject.Dispose(System.Boolean)
+  commentId: M:Foundation.NSObject.Dispose(System.Boolean)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: Dispose(bool)
+  nameWithType: NSObject.Dispose(bool)
+  fullName: Foundation.NSObject.Dispose(bool)
+  nameWithType.vb: NSObject.Dispose(Boolean)
+  fullName.vb: Foundation.NSObject.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: Foundation.NSObject.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.Dispose(System.Boolean)
+    name: Dispose
+    isExternal: true
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Foundation.NSObject.AddObserver(System.String,Foundation.NSKeyValueObservingOptions,System.Action{Foundation.NSObservedChange})
+  commentId: M:Foundation.NSObject.AddObserver(System.String,Foundation.NSKeyValueObservingOptions,System.Action{Foundation.NSObservedChange})
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: AddObserver(string, NSKeyValueObservingOptions, Action<NSObservedChange>)
+  nameWithType: NSObject.AddObserver(string, NSKeyValueObservingOptions, Action<NSObservedChange>)
+  fullName: Foundation.NSObject.AddObserver(string, Foundation.NSKeyValueObservingOptions, System.Action<Foundation.NSObservedChange>)
+  nameWithType.vb: NSObject.AddObserver(String, NSKeyValueObservingOptions, Action(Of NSObservedChange))
+  fullName.vb: Foundation.NSObject.AddObserver(String, Foundation.NSKeyValueObservingOptions, System.Action(Of Foundation.NSObservedChange))
+  name.vb: AddObserver(String, NSKeyValueObservingOptions, Action(Of NSObservedChange))
+  spec.csharp:
+  - uid: Foundation.NSObject.AddObserver(System.String,Foundation.NSKeyValueObservingOptions,System.Action{Foundation.NSObservedChange})
+    name: AddObserver
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueObservingOptions
+    name: NSKeyValueObservingOptions
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Foundation.NSObservedChange
+    name: NSObservedChange
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.AddObserver(System.String,Foundation.NSKeyValueObservingOptions,System.Action{Foundation.NSObservedChange})
+    name: AddObserver
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueObservingOptions
+    name: NSKeyValueObservingOptions
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundation.NSObservedChange
+    name: NSObservedChange
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Foundation.NSObject.AddObserver(Foundation.NSString,Foundation.NSKeyValueObservingOptions,System.Action{Foundation.NSObservedChange})
+  commentId: M:Foundation.NSObject.AddObserver(Foundation.NSString,Foundation.NSKeyValueObservingOptions,System.Action{Foundation.NSObservedChange})
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: AddObserver(NSString, NSKeyValueObservingOptions, Action<NSObservedChange>)
+  nameWithType: NSObject.AddObserver(NSString, NSKeyValueObservingOptions, Action<NSObservedChange>)
+  fullName: Foundation.NSObject.AddObserver(Foundation.NSString, Foundation.NSKeyValueObservingOptions, System.Action<Foundation.NSObservedChange>)
+  nameWithType.vb: NSObject.AddObserver(NSString, NSKeyValueObservingOptions, Action(Of NSObservedChange))
+  fullName.vb: Foundation.NSObject.AddObserver(Foundation.NSString, Foundation.NSKeyValueObservingOptions, System.Action(Of Foundation.NSObservedChange))
+  name.vb: AddObserver(NSString, NSKeyValueObservingOptions, Action(Of NSObservedChange))
+  spec.csharp:
+  - uid: Foundation.NSObject.AddObserver(Foundation.NSString,Foundation.NSKeyValueObservingOptions,System.Action{Foundation.NSObservedChange})
+    name: AddObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueObservingOptions
+    name: NSKeyValueObservingOptions
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Foundation.NSObservedChange
+    name: NSObservedChange
+    isExternal: true
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.AddObserver(Foundation.NSString,Foundation.NSKeyValueObservingOptions,System.Action{Foundation.NSObservedChange})
+    name: AddObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueObservingOptions
+    name: NSKeyValueObservingOptions
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Foundation.NSObservedChange
+    name: NSObservedChange
+    isExternal: true
+  - name: )
+  - name: )
+- uid: Foundation.NSObject.Alloc(ObjCRuntime.Class)
+  commentId: M:Foundation.NSObject.Alloc(ObjCRuntime.Class)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: Alloc(Class)
+  nameWithType: NSObject.Alloc(Class)
+  fullName: Foundation.NSObject.Alloc(ObjCRuntime.Class)
+  spec.csharp:
+  - uid: Foundation.NSObject.Alloc(ObjCRuntime.Class)
+    name: Alloc
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Class
+    name: Class
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.Alloc(ObjCRuntime.Class)
+    name: Alloc
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Class
+    name: Class
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.Init
+  commentId: M:Foundation.NSObject.Init
+  parent: Foundation.NSObject
+  isExternal: true
+  name: Init()
+  nameWithType: NSObject.Init()
+  fullName: Foundation.NSObject.Init()
+  spec.csharp:
+  - uid: Foundation.NSObject.Init
+    name: Init
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.Init
+    name: Init
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.InvokeInBackground(System.Action)
+  commentId: M:Foundation.NSObject.InvokeInBackground(System.Action)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: InvokeInBackground(Action)
+  nameWithType: NSObject.InvokeInBackground(Action)
+  fullName: Foundation.NSObject.InvokeInBackground(System.Action)
+  spec.csharp:
+  - uid: Foundation.NSObject.InvokeInBackground(System.Action)
+    name: InvokeInBackground
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.InvokeInBackground(System.Action)
+    name: InvokeInBackground
+    isExternal: true
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: Foundation.NSObject.AddObserver(Foundation.NSObject,Foundation.NSString,Foundation.NSKeyValueObservingOptions,System.IntPtr)
+  commentId: M:Foundation.NSObject.AddObserver(Foundation.NSObject,Foundation.NSString,Foundation.NSKeyValueObservingOptions,System.IntPtr)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: AddObserver(NSObject, NSString, NSKeyValueObservingOptions, nint)
+  nameWithType: NSObject.AddObserver(NSObject, NSString, NSKeyValueObservingOptions, nint)
+  fullName: Foundation.NSObject.AddObserver(Foundation.NSObject, Foundation.NSString, Foundation.NSKeyValueObservingOptions, nint)
+  nameWithType.vb: NSObject.AddObserver(NSObject, NSString, NSKeyValueObservingOptions, IntPtr)
+  fullName.vb: Foundation.NSObject.AddObserver(Foundation.NSObject, Foundation.NSString, Foundation.NSKeyValueObservingOptions, System.IntPtr)
+  name.vb: AddObserver(NSObject, NSString, NSKeyValueObservingOptions, IntPtr)
+  spec.csharp:
+  - uid: Foundation.NSObject.AddObserver(Foundation.NSObject,Foundation.NSString,Foundation.NSKeyValueObservingOptions,System.IntPtr)
+    name: AddObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueObservingOptions
+    name: NSKeyValueObservingOptions
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.AddObserver(Foundation.NSObject,Foundation.NSString,Foundation.NSKeyValueObservingOptions,System.IntPtr)
+    name: AddObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueObservingOptions
+    name: NSKeyValueObservingOptions
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: Foundation.NSObject.AddObserver(Foundation.NSObject,System.String,Foundation.NSKeyValueObservingOptions,System.IntPtr)
+  commentId: M:Foundation.NSObject.AddObserver(Foundation.NSObject,System.String,Foundation.NSKeyValueObservingOptions,System.IntPtr)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: AddObserver(NSObject, string, NSKeyValueObservingOptions, nint)
+  nameWithType: NSObject.AddObserver(NSObject, string, NSKeyValueObservingOptions, nint)
+  fullName: Foundation.NSObject.AddObserver(Foundation.NSObject, string, Foundation.NSKeyValueObservingOptions, nint)
+  nameWithType.vb: NSObject.AddObserver(NSObject, String, NSKeyValueObservingOptions, IntPtr)
+  fullName.vb: Foundation.NSObject.AddObserver(Foundation.NSObject, String, Foundation.NSKeyValueObservingOptions, System.IntPtr)
+  name.vb: AddObserver(NSObject, String, NSKeyValueObservingOptions, IntPtr)
+  spec.csharp:
+  - uid: Foundation.NSObject.AddObserver(Foundation.NSObject,System.String,Foundation.NSKeyValueObservingOptions,System.IntPtr)
+    name: AddObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueObservingOptions
+    name: NSKeyValueObservingOptions
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.AddObserver(Foundation.NSObject,System.String,Foundation.NSKeyValueObservingOptions,System.IntPtr)
+    name: AddObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueObservingOptions
+    name: NSKeyValueObservingOptions
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: Foundation.NSObject.AutomaticallyNotifiesObserversForKey(System.String)
+  commentId: M:Foundation.NSObject.AutomaticallyNotifiesObserversForKey(System.String)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: AutomaticallyNotifiesObserversForKey(string)
+  nameWithType: NSObject.AutomaticallyNotifiesObserversForKey(string)
+  fullName: Foundation.NSObject.AutomaticallyNotifiesObserversForKey(string)
+  nameWithType.vb: NSObject.AutomaticallyNotifiesObserversForKey(String)
+  fullName.vb: Foundation.NSObject.AutomaticallyNotifiesObserversForKey(String)
+  name.vb: AutomaticallyNotifiesObserversForKey(String)
+  spec.csharp:
+  - uid: Foundation.NSObject.AutomaticallyNotifiesObserversForKey(System.String)
+    name: AutomaticallyNotifiesObserversForKey
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.AutomaticallyNotifiesObserversForKey(System.String)
+    name: AutomaticallyNotifiesObserversForKey
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Foundation.NSObject.AwakeFromNib
+  commentId: M:Foundation.NSObject.AwakeFromNib
+  parent: Foundation.NSObject
+  isExternal: true
+  name: AwakeFromNib()
+  nameWithType: NSObject.AwakeFromNib()
+  fullName: Foundation.NSObject.AwakeFromNib()
+  spec.csharp:
+  - uid: Foundation.NSObject.AwakeFromNib
+    name: AwakeFromNib
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.AwakeFromNib
+    name: AwakeFromNib
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject)
+  commentId: M:Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: CancelPreviousPerformRequest(NSObject)
+  nameWithType: NSObject.CancelPreviousPerformRequest(NSObject)
+  fullName: Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject)
+  spec.csharp:
+  - uid: Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject)
+    name: CancelPreviousPerformRequest
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject)
+    name: CancelPreviousPerformRequest
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject,ObjCRuntime.Selector,Foundation.NSObject)
+  commentId: M:Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject,ObjCRuntime.Selector,Foundation.NSObject)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: CancelPreviousPerformRequest(NSObject, Selector, NSObject)
+  nameWithType: NSObject.CancelPreviousPerformRequest(NSObject, Selector, NSObject)
+  fullName: Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject, ObjCRuntime.Selector, Foundation.NSObject)
+  spec.csharp:
+  - uid: Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject,ObjCRuntime.Selector,Foundation.NSObject)
+    name: CancelPreviousPerformRequest
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.CancelPreviousPerformRequest(Foundation.NSObject,ObjCRuntime.Selector,Foundation.NSObject)
+    name: CancelPreviousPerformRequest
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.Copy
+  commentId: M:Foundation.NSObject.Copy
+  parent: Foundation.NSObject
+  isExternal: true
+  name: Copy()
+  nameWithType: NSObject.Copy()
+  fullName: Foundation.NSObject.Copy()
+  spec.csharp:
+  - uid: Foundation.NSObject.Copy
+    name: Copy
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.Copy
+    name: Copy
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.DidChange(Foundation.NSKeyValueChange,Foundation.NSIndexSet,Foundation.NSString)
+  commentId: M:Foundation.NSObject.DidChange(Foundation.NSKeyValueChange,Foundation.NSIndexSet,Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: DidChange(NSKeyValueChange, NSIndexSet, NSString)
+  nameWithType: NSObject.DidChange(NSKeyValueChange, NSIndexSet, NSString)
+  fullName: Foundation.NSObject.DidChange(Foundation.NSKeyValueChange, Foundation.NSIndexSet, Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.DidChange(Foundation.NSKeyValueChange,Foundation.NSIndexSet,Foundation.NSString)
+    name: DidChange
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSKeyValueChange
+    name: NSKeyValueChange
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSIndexSet
+    name: NSIndexSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.DidChange(Foundation.NSKeyValueChange,Foundation.NSIndexSet,Foundation.NSString)
+    name: DidChange
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSKeyValueChange
+    name: NSKeyValueChange
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSIndexSet
+    name: NSIndexSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.DidChange(Foundation.NSString,Foundation.NSKeyValueSetMutationKind,Foundation.NSSet)
+  commentId: M:Foundation.NSObject.DidChange(Foundation.NSString,Foundation.NSKeyValueSetMutationKind,Foundation.NSSet)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: DidChange(NSString, NSKeyValueSetMutationKind, NSSet)
+  nameWithType: NSObject.DidChange(NSString, NSKeyValueSetMutationKind, NSSet)
+  fullName: Foundation.NSObject.DidChange(Foundation.NSString, Foundation.NSKeyValueSetMutationKind, Foundation.NSSet)
+  spec.csharp:
+  - uid: Foundation.NSObject.DidChange(Foundation.NSString,Foundation.NSKeyValueSetMutationKind,Foundation.NSSet)
+    name: DidChange
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueSetMutationKind
+    name: NSKeyValueSetMutationKind
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.DidChange(Foundation.NSString,Foundation.NSKeyValueSetMutationKind,Foundation.NSSet)
+    name: DidChange
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueSetMutationKind
+    name: NSKeyValueSetMutationKind
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.DidChangeValue(System.String)
+  commentId: M:Foundation.NSObject.DidChangeValue(System.String)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: DidChangeValue(string)
+  nameWithType: NSObject.DidChangeValue(string)
+  fullName: Foundation.NSObject.DidChangeValue(string)
+  nameWithType.vb: NSObject.DidChangeValue(String)
+  fullName.vb: Foundation.NSObject.DidChangeValue(String)
+  name.vb: DidChangeValue(String)
+  spec.csharp:
+  - uid: Foundation.NSObject.DidChangeValue(System.String)
+    name: DidChangeValue
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.DidChangeValue(System.String)
+    name: DidChangeValue
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Foundation.NSObject.DoesNotRecognizeSelector(ObjCRuntime.Selector)
+  commentId: M:Foundation.NSObject.DoesNotRecognizeSelector(ObjCRuntime.Selector)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: DoesNotRecognizeSelector(Selector)
+  nameWithType: NSObject.DoesNotRecognizeSelector(Selector)
+  fullName: Foundation.NSObject.DoesNotRecognizeSelector(ObjCRuntime.Selector)
+  spec.csharp:
+  - uid: Foundation.NSObject.DoesNotRecognizeSelector(ObjCRuntime.Selector)
+    name: DoesNotRecognizeSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.DoesNotRecognizeSelector(ObjCRuntime.Selector)
+    name: DoesNotRecognizeSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.GetDictionaryOfValuesFromKeys(Foundation.NSString[])
+  commentId: M:Foundation.NSObject.GetDictionaryOfValuesFromKeys(Foundation.NSString[])
+  parent: Foundation.NSObject
+  isExternal: true
+  name: GetDictionaryOfValuesFromKeys(NSString[])
+  nameWithType: NSObject.GetDictionaryOfValuesFromKeys(NSString[])
+  fullName: Foundation.NSObject.GetDictionaryOfValuesFromKeys(Foundation.NSString[])
+  nameWithType.vb: NSObject.GetDictionaryOfValuesFromKeys(NSString())
+  fullName.vb: Foundation.NSObject.GetDictionaryOfValuesFromKeys(Foundation.NSString())
+  name.vb: GetDictionaryOfValuesFromKeys(NSString())
+  spec.csharp:
+  - uid: Foundation.NSObject.GetDictionaryOfValuesFromKeys(Foundation.NSString[])
+    name: GetDictionaryOfValuesFromKeys
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.GetDictionaryOfValuesFromKeys(Foundation.NSString[])
+    name: GetDictionaryOfValuesFromKeys
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Foundation.NSObject.GetKeyPathsForValuesAffecting(Foundation.NSString)
+  commentId: M:Foundation.NSObject.GetKeyPathsForValuesAffecting(Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: GetKeyPathsForValuesAffecting(NSString)
+  nameWithType: NSObject.GetKeyPathsForValuesAffecting(NSString)
+  fullName: Foundation.NSObject.GetKeyPathsForValuesAffecting(Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.GetKeyPathsForValuesAffecting(Foundation.NSString)
+    name: GetKeyPathsForValuesAffecting
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.GetKeyPathsForValuesAffecting(Foundation.NSString)
+    name: GetKeyPathsForValuesAffecting
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.GetMethodForSelector(ObjCRuntime.Selector)
+  commentId: M:Foundation.NSObject.GetMethodForSelector(ObjCRuntime.Selector)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: GetMethodForSelector(Selector)
+  nameWithType: NSObject.GetMethodForSelector(Selector)
+  fullName: Foundation.NSObject.GetMethodForSelector(ObjCRuntime.Selector)
+  spec.csharp:
+  - uid: Foundation.NSObject.GetMethodForSelector(ObjCRuntime.Selector)
+    name: GetMethodForSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.GetMethodForSelector(ObjCRuntime.Selector)
+    name: GetMethodForSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.GetNativeHash
+  commentId: M:Foundation.NSObject.GetNativeHash
+  parent: Foundation.NSObject
+  isExternal: true
+  name: GetNativeHash()
+  nameWithType: NSObject.GetNativeHash()
+  fullName: Foundation.NSObject.GetNativeHash()
+  spec.csharp:
+  - uid: Foundation.NSObject.GetNativeHash
+    name: GetNativeHash
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.GetNativeHash
+    name: GetNativeHash
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.IsEqual(Foundation.NSObject)
+  commentId: M:Foundation.NSObject.IsEqual(Foundation.NSObject)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: IsEqual(NSObject)
+  nameWithType: NSObject.IsEqual(NSObject)
+  fullName: Foundation.NSObject.IsEqual(Foundation.NSObject)
+  spec.csharp:
+  - uid: Foundation.NSObject.IsEqual(Foundation.NSObject)
+    name: IsEqual
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.IsEqual(Foundation.NSObject)
+    name: IsEqual
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.IsKindOfClass(ObjCRuntime.Class)
+  commentId: M:Foundation.NSObject.IsKindOfClass(ObjCRuntime.Class)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: IsKindOfClass(Class)
+  nameWithType: NSObject.IsKindOfClass(Class)
+  fullName: Foundation.NSObject.IsKindOfClass(ObjCRuntime.Class)
+  spec.csharp:
+  - uid: Foundation.NSObject.IsKindOfClass(ObjCRuntime.Class)
+    name: IsKindOfClass
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Class
+    name: Class
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.IsKindOfClass(ObjCRuntime.Class)
+    name: IsKindOfClass
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Class
+    name: Class
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.IsMemberOfClass(ObjCRuntime.Class)
+  commentId: M:Foundation.NSObject.IsMemberOfClass(ObjCRuntime.Class)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: IsMemberOfClass(Class)
+  nameWithType: NSObject.IsMemberOfClass(Class)
+  fullName: Foundation.NSObject.IsMemberOfClass(ObjCRuntime.Class)
+  spec.csharp:
+  - uid: Foundation.NSObject.IsMemberOfClass(ObjCRuntime.Class)
+    name: IsMemberOfClass
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Class
+    name: Class
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.IsMemberOfClass(ObjCRuntime.Class)
+    name: IsMemberOfClass
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Class
+    name: Class
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.MutableCopy
+  commentId: M:Foundation.NSObject.MutableCopy
+  parent: Foundation.NSObject
+  isExternal: true
+  name: MutableCopy()
+  nameWithType: NSObject.MutableCopy()
+  fullName: Foundation.NSObject.MutableCopy()
+  spec.csharp:
+  - uid: Foundation.NSObject.MutableCopy
+    name: MutableCopy
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.MutableCopy
+    name: MutableCopy
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.ObserveValue(Foundation.NSString,Foundation.NSObject,Foundation.NSDictionary,System.IntPtr)
+  commentId: M:Foundation.NSObject.ObserveValue(Foundation.NSString,Foundation.NSObject,Foundation.NSDictionary,System.IntPtr)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: ObserveValue(NSString, NSObject, NSDictionary, nint)
+  nameWithType: NSObject.ObserveValue(NSString, NSObject, NSDictionary, nint)
+  fullName: Foundation.NSObject.ObserveValue(Foundation.NSString, Foundation.NSObject, Foundation.NSDictionary, nint)
+  nameWithType.vb: NSObject.ObserveValue(NSString, NSObject, NSDictionary, IntPtr)
+  fullName.vb: Foundation.NSObject.ObserveValue(Foundation.NSString, Foundation.NSObject, Foundation.NSDictionary, System.IntPtr)
+  name.vb: ObserveValue(NSString, NSObject, NSDictionary, IntPtr)
+  spec.csharp:
+  - uid: Foundation.NSObject.ObserveValue(Foundation.NSString,Foundation.NSObject,Foundation.NSDictionary,System.IntPtr)
+    name: ObserveValue
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSDictionary
+    name: NSDictionary
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.ObserveValue(Foundation.NSString,Foundation.NSObject,Foundation.NSDictionary,System.IntPtr)
+    name: ObserveValue
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSDictionary
+    name: NSDictionary
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,System.Double,Foundation.NSString[])
+  commentId: M:Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,System.Double,Foundation.NSString[])
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: PerformSelector(Selector, NSObject, double, NSString[])
+  nameWithType: NSObject.PerformSelector(Selector, NSObject, double, NSString[])
+  fullName: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject, double, Foundation.NSString[])
+  nameWithType.vb: NSObject.PerformSelector(Selector, NSObject, Double, NSString())
+  fullName.vb: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject, Double, Foundation.NSString())
+  name.vb: PerformSelector(Selector, NSObject, Double, NSString())
+  spec.csharp:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,System.Double,Foundation.NSString[])
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,System.Double,Foundation.NSString[])
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,System.Double)
+  commentId: M:Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,System.Double)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: PerformSelector(Selector, NSObject, double)
+  nameWithType: NSObject.PerformSelector(Selector, NSObject, double)
+  fullName: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject, double)
+  nameWithType.vb: NSObject.PerformSelector(Selector, NSObject, Double)
+  fullName.vb: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject, Double)
+  name.vb: PerformSelector(Selector, NSObject, Double)
+  spec.csharp:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,System.Double)
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,System.Double)
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSThread,Foundation.NSObject,System.Boolean)
+  commentId: M:Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSThread,Foundation.NSObject,System.Boolean)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: PerformSelector(Selector, NSThread, NSObject, bool)
+  nameWithType: NSObject.PerformSelector(Selector, NSThread, NSObject, bool)
+  fullName: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSThread, Foundation.NSObject, bool)
+  nameWithType.vb: NSObject.PerformSelector(Selector, NSThread, NSObject, Boolean)
+  fullName.vb: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSThread, Foundation.NSObject, Boolean)
+  name.vb: PerformSelector(Selector, NSThread, NSObject, Boolean)
+  spec.csharp:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSThread,Foundation.NSObject,System.Boolean)
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSThread
+    name: NSThread
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSThread,Foundation.NSObject,System.Boolean)
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSThread
+    name: NSThread
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSThread,Foundation.NSObject,System.Boolean,Foundation.NSString[])
+  commentId: M:Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSThread,Foundation.NSObject,System.Boolean,Foundation.NSString[])
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: PerformSelector(Selector, NSThread, NSObject, bool, NSString[])
+  nameWithType: NSObject.PerformSelector(Selector, NSThread, NSObject, bool, NSString[])
+  fullName: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSThread, Foundation.NSObject, bool, Foundation.NSString[])
+  nameWithType.vb: NSObject.PerformSelector(Selector, NSThread, NSObject, Boolean, NSString())
+  fullName.vb: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSThread, Foundation.NSObject, Boolean, Foundation.NSString())
+  name.vb: PerformSelector(Selector, NSThread, NSObject, Boolean, NSString())
+  spec.csharp:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSThread,Foundation.NSObject,System.Boolean,Foundation.NSString[])
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSThread
+    name: NSThread
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSThread,Foundation.NSObject,System.Boolean,Foundation.NSString[])
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSThread
+    name: NSThread
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector)
+  commentId: M:Foundation.NSObject.PerformSelector(ObjCRuntime.Selector)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: PerformSelector(Selector)
+  nameWithType: NSObject.PerformSelector(Selector)
+  fullName: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector)
+  spec.csharp:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector)
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector)
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject)
+  commentId: M:Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: PerformSelector(Selector, NSObject)
+  nameWithType: NSObject.PerformSelector(Selector, NSObject)
+  fullName: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject)
+  spec.csharp:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject)
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject)
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,Foundation.NSObject)
+  commentId: M:Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,Foundation.NSObject)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: PerformSelector(Selector, NSObject, NSObject)
+  nameWithType: NSObject.PerformSelector(Selector, NSObject, NSObject)
+  fullName: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector, Foundation.NSObject, Foundation.NSObject)
+  spec.csharp:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,Foundation.NSObject)
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.PerformSelector(ObjCRuntime.Selector,Foundation.NSObject,Foundation.NSObject)
+    name: PerformSelector
+    isExternal: true
+  - name: (
+  - uid: ObjCRuntime.Selector
+    name: Selector
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.PrepareForInterfaceBuilder
+  commentId: M:Foundation.NSObject.PrepareForInterfaceBuilder
+  parent: Foundation.NSObject
+  isExternal: true
+  name: PrepareForInterfaceBuilder()
+  nameWithType: NSObject.PrepareForInterfaceBuilder()
+  fullName: Foundation.NSObject.PrepareForInterfaceBuilder()
+  spec.csharp:
+  - uid: Foundation.NSObject.PrepareForInterfaceBuilder
+    name: PrepareForInterfaceBuilder
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.PrepareForInterfaceBuilder
+    name: PrepareForInterfaceBuilder
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,Foundation.NSString,System.IntPtr)
+  commentId: M:Foundation.NSObject.RemoveObserver(Foundation.NSObject,Foundation.NSString,System.IntPtr)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: RemoveObserver(NSObject, NSString, nint)
+  nameWithType: NSObject.RemoveObserver(NSObject, NSString, nint)
+  fullName: Foundation.NSObject.RemoveObserver(Foundation.NSObject, Foundation.NSString, nint)
+  nameWithType.vb: NSObject.RemoveObserver(NSObject, NSString, IntPtr)
+  fullName.vb: Foundation.NSObject.RemoveObserver(Foundation.NSObject, Foundation.NSString, System.IntPtr)
+  name.vb: RemoveObserver(NSObject, NSString, IntPtr)
+  spec.csharp:
+  - uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,Foundation.NSString,System.IntPtr)
+    name: RemoveObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,Foundation.NSString,System.IntPtr)
+    name: RemoveObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,System.String,System.IntPtr)
+  commentId: M:Foundation.NSObject.RemoveObserver(Foundation.NSObject,System.String,System.IntPtr)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: RemoveObserver(NSObject, string, nint)
+  nameWithType: NSObject.RemoveObserver(NSObject, string, nint)
+  fullName: Foundation.NSObject.RemoveObserver(Foundation.NSObject, string, nint)
+  nameWithType.vb: NSObject.RemoveObserver(NSObject, String, IntPtr)
+  fullName.vb: Foundation.NSObject.RemoveObserver(Foundation.NSObject, String, System.IntPtr)
+  name.vb: RemoveObserver(NSObject, String, IntPtr)
+  spec.csharp:
+  - uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,System.String,System.IntPtr)
+    name: RemoveObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,System.String,System.IntPtr)
+    name: RemoveObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,Foundation.NSString)
+  commentId: M:Foundation.NSObject.RemoveObserver(Foundation.NSObject,Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: RemoveObserver(NSObject, NSString)
+  nameWithType: NSObject.RemoveObserver(NSObject, NSString)
+  fullName: Foundation.NSObject.RemoveObserver(Foundation.NSObject, Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,Foundation.NSString)
+    name: RemoveObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,Foundation.NSString)
+    name: RemoveObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,System.String)
+  commentId: M:Foundation.NSObject.RemoveObserver(Foundation.NSObject,System.String)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: RemoveObserver(NSObject, string)
+  nameWithType: NSObject.RemoveObserver(NSObject, string)
+  fullName: Foundation.NSObject.RemoveObserver(Foundation.NSObject, string)
+  nameWithType.vb: NSObject.RemoveObserver(NSObject, String)
+  fullName.vb: Foundation.NSObject.RemoveObserver(Foundation.NSObject, String)
+  name.vb: RemoveObserver(NSObject, String)
+  spec.csharp:
+  - uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,System.String)
+    name: RemoveObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.RemoveObserver(Foundation.NSObject,System.String)
+    name: RemoveObserver
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Foundation.NSObject.SetNilValueForKey(Foundation.NSString)
+  commentId: M:Foundation.NSObject.SetNilValueForKey(Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: SetNilValueForKey(NSString)
+  nameWithType: NSObject.SetNilValueForKey(NSString)
+  fullName: Foundation.NSObject.SetNilValueForKey(Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.SetNilValueForKey(Foundation.NSString)
+    name: SetNilValueForKey
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.SetNilValueForKey(Foundation.NSString)
+    name: SetNilValueForKey
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.SetValueForKey(Foundation.NSObject,Foundation.NSString)
+  commentId: M:Foundation.NSObject.SetValueForKey(Foundation.NSObject,Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: SetValueForKey(NSObject, NSString)
+  nameWithType: NSObject.SetValueForKey(NSObject, NSString)
+  fullName: Foundation.NSObject.SetValueForKey(Foundation.NSObject, Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.SetValueForKey(Foundation.NSObject,Foundation.NSString)
+    name: SetValueForKey
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.SetValueForKey(Foundation.NSObject,Foundation.NSString)
+    name: SetValueForKey
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.SetValueForKeyPath(Foundation.NSObject,Foundation.NSString)
+  commentId: M:Foundation.NSObject.SetValueForKeyPath(Foundation.NSObject,Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: SetValueForKeyPath(NSObject, NSString)
+  nameWithType: NSObject.SetValueForKeyPath(NSObject, NSString)
+  fullName: Foundation.NSObject.SetValueForKeyPath(Foundation.NSObject, Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.SetValueForKeyPath(Foundation.NSObject,Foundation.NSString)
+    name: SetValueForKeyPath
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.SetValueForKeyPath(Foundation.NSObject,Foundation.NSString)
+    name: SetValueForKeyPath
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.SetValueForUndefinedKey(Foundation.NSObject,Foundation.NSString)
+  commentId: M:Foundation.NSObject.SetValueForUndefinedKey(Foundation.NSObject,Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: SetValueForUndefinedKey(NSObject, NSString)
+  nameWithType: NSObject.SetValueForUndefinedKey(NSObject, NSString)
+  fullName: Foundation.NSObject.SetValueForUndefinedKey(Foundation.NSObject, Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.SetValueForUndefinedKey(Foundation.NSObject,Foundation.NSString)
+    name: SetValueForUndefinedKey
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.SetValueForUndefinedKey(Foundation.NSObject,Foundation.NSString)
+    name: SetValueForUndefinedKey
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSObject
+    name: NSObject
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.SetValuesForKeysWithDictionary(Foundation.NSDictionary)
+  commentId: M:Foundation.NSObject.SetValuesForKeysWithDictionary(Foundation.NSDictionary)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: SetValuesForKeysWithDictionary(NSDictionary)
+  nameWithType: NSObject.SetValuesForKeysWithDictionary(NSDictionary)
+  fullName: Foundation.NSObject.SetValuesForKeysWithDictionary(Foundation.NSDictionary)
+  spec.csharp:
+  - uid: Foundation.NSObject.SetValuesForKeysWithDictionary(Foundation.NSDictionary)
+    name: SetValuesForKeysWithDictionary
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSDictionary
+    name: NSDictionary
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.SetValuesForKeysWithDictionary(Foundation.NSDictionary)
+    name: SetValuesForKeysWithDictionary
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSDictionary
+    name: NSDictionary
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.ValueForKey(Foundation.NSString)
+  commentId: M:Foundation.NSObject.ValueForKey(Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: ValueForKey(NSString)
+  nameWithType: NSObject.ValueForKey(NSString)
+  fullName: Foundation.NSObject.ValueForKey(Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.ValueForKey(Foundation.NSString)
+    name: ValueForKey
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.ValueForKey(Foundation.NSString)
+    name: ValueForKey
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.ValueForKeyPath(Foundation.NSString)
+  commentId: M:Foundation.NSObject.ValueForKeyPath(Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: ValueForKeyPath(NSString)
+  nameWithType: NSObject.ValueForKeyPath(NSString)
+  fullName: Foundation.NSObject.ValueForKeyPath(Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.ValueForKeyPath(Foundation.NSString)
+    name: ValueForKeyPath
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.ValueForKeyPath(Foundation.NSString)
+    name: ValueForKeyPath
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.ValueForUndefinedKey(Foundation.NSString)
+  commentId: M:Foundation.NSObject.ValueForUndefinedKey(Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: ValueForUndefinedKey(NSString)
+  nameWithType: NSObject.ValueForUndefinedKey(NSString)
+  fullName: Foundation.NSObject.ValueForUndefinedKey(Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.ValueForUndefinedKey(Foundation.NSString)
+    name: ValueForUndefinedKey
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.ValueForUndefinedKey(Foundation.NSString)
+    name: ValueForUndefinedKey
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.WillChange(Foundation.NSKeyValueChange,Foundation.NSIndexSet,Foundation.NSString)
+  commentId: M:Foundation.NSObject.WillChange(Foundation.NSKeyValueChange,Foundation.NSIndexSet,Foundation.NSString)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: WillChange(NSKeyValueChange, NSIndexSet, NSString)
+  nameWithType: NSObject.WillChange(NSKeyValueChange, NSIndexSet, NSString)
+  fullName: Foundation.NSObject.WillChange(Foundation.NSKeyValueChange, Foundation.NSIndexSet, Foundation.NSString)
+  spec.csharp:
+  - uid: Foundation.NSObject.WillChange(Foundation.NSKeyValueChange,Foundation.NSIndexSet,Foundation.NSString)
+    name: WillChange
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSKeyValueChange
+    name: NSKeyValueChange
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSIndexSet
+    name: NSIndexSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.WillChange(Foundation.NSKeyValueChange,Foundation.NSIndexSet,Foundation.NSString)
+    name: WillChange
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSKeyValueChange
+    name: NSKeyValueChange
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSIndexSet
+    name: NSIndexSet
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.WillChange(Foundation.NSString,Foundation.NSKeyValueSetMutationKind,Foundation.NSSet)
+  commentId: M:Foundation.NSObject.WillChange(Foundation.NSString,Foundation.NSKeyValueSetMutationKind,Foundation.NSSet)
+  parent: Foundation.NSObject
+  isExternal: true
+  name: WillChange(NSString, NSKeyValueSetMutationKind, NSSet)
+  nameWithType: NSObject.WillChange(NSString, NSKeyValueSetMutationKind, NSSet)
+  fullName: Foundation.NSObject.WillChange(Foundation.NSString, Foundation.NSKeyValueSetMutationKind, Foundation.NSSet)
+  spec.csharp:
+  - uid: Foundation.NSObject.WillChange(Foundation.NSString,Foundation.NSKeyValueSetMutationKind,Foundation.NSSet)
+    name: WillChange
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueSetMutationKind
+    name: NSKeyValueSetMutationKind
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.WillChange(Foundation.NSString,Foundation.NSKeyValueSetMutationKind,Foundation.NSSet)
+    name: WillChange
+    isExternal: true
+  - name: (
+  - uid: Foundation.NSString
+    name: NSString
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSKeyValueSetMutationKind
+    name: NSKeyValueSetMutationKind
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Foundation.NSSet
+    name: NSSet
+    isExternal: true
+  - name: )
+- uid: Foundation.NSObject.WillChangeValue(System.String)
+  commentId: M:Foundation.NSObject.WillChangeValue(System.String)
+  parent: Foundation.NSObject
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: WillChangeValue(string)
+  nameWithType: NSObject.WillChangeValue(string)
+  fullName: Foundation.NSObject.WillChangeValue(string)
+  nameWithType.vb: NSObject.WillChangeValue(String)
+  fullName.vb: Foundation.NSObject.WillChangeValue(String)
+  name.vb: WillChangeValue(String)
+  spec.csharp:
+  - uid: Foundation.NSObject.WillChangeValue(System.String)
+    name: WillChangeValue
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Foundation.NSObject.WillChangeValue(System.String)
+    name: WillChangeValue
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Foundation.NSObject.IsDirectBinding
+  commentId: P:Foundation.NSObject.IsDirectBinding
+  parent: Foundation.NSObject
+  isExternal: true
+  name: IsDirectBinding
+  nameWithType: NSObject.IsDirectBinding
+  fullName: Foundation.NSObject.IsDirectBinding
+- uid: Foundation.NSObject.SuperHandle
+  commentId: P:Foundation.NSObject.SuperHandle
+  parent: Foundation.NSObject
+  isExternal: true
+  name: SuperHandle
+  nameWithType: NSObject.SuperHandle
+  fullName: Foundation.NSObject.SuperHandle
+- uid: Foundation.NSObject.Handle
+  commentId: P:Foundation.NSObject.Handle
+  parent: Foundation.NSObject
+  isExternal: true
+  name: Handle
+  nameWithType: NSObject.Handle
+  fullName: Foundation.NSObject.Handle
+- uid: Foundation.NSObject.AccessibilityAttributedUserInputLabels
+  commentId: P:Foundation.NSObject.AccessibilityAttributedUserInputLabels
+  parent: Foundation.NSObject
+  isExternal: true
+  name: AccessibilityAttributedUserInputLabels
+  nameWithType: NSObject.AccessibilityAttributedUserInputLabels
+  fullName: Foundation.NSObject.AccessibilityAttributedUserInputLabels
+- uid: Foundation.NSObject.AccessibilityRespondsToUserInteraction
+  commentId: P:Foundation.NSObject.AccessibilityRespondsToUserInteraction
+  parent: Foundation.NSObject
+  isExternal: true
+  name: AccessibilityRespondsToUserInteraction
+  nameWithType: NSObject.AccessibilityRespondsToUserInteraction
+  fullName: Foundation.NSObject.AccessibilityRespondsToUserInteraction
+- uid: Foundation.NSObject.AccessibilityTextualContext
+  commentId: P:Foundation.NSObject.AccessibilityTextualContext
+  parent: Foundation.NSObject
+  isExternal: true
+  name: AccessibilityTextualContext
+  nameWithType: NSObject.AccessibilityTextualContext
+  fullName: Foundation.NSObject.AccessibilityTextualContext
+- uid: Foundation.NSObject.AccessibilityUserInputLabels
+  commentId: P:Foundation.NSObject.AccessibilityUserInputLabels
+  parent: Foundation.NSObject
+  isExternal: true
+  name: AccessibilityUserInputLabels
+  nameWithType: NSObject.AccessibilityUserInputLabels
+  fullName: Foundation.NSObject.AccessibilityUserInputLabels
+- uid: Foundation.NSObject.Class
+  commentId: P:Foundation.NSObject.Class
+  parent: Foundation.NSObject
+  isExternal: true
+  name: Class
+  nameWithType: NSObject.Class
+  fullName: Foundation.NSObject.Class
+- uid: Foundation.NSObject.DebugDescription
+  commentId: P:Foundation.NSObject.DebugDescription
+  parent: Foundation.NSObject
+  isExternal: true
+  name: DebugDescription
+  nameWithType: NSObject.DebugDescription
+  fullName: Foundation.NSObject.DebugDescription
+- uid: Foundation.NSObject.Description
+  commentId: P:Foundation.NSObject.Description
+  parent: Foundation.NSObject
+  isExternal: true
+  name: Description
+  nameWithType: NSObject.Description
+  fullName: Foundation.NSObject.Description
+- uid: Foundation.NSObject.IsProxy
+  commentId: P:Foundation.NSObject.IsProxy
+  parent: Foundation.NSObject
+  isExternal: true
+  name: IsProxy
+  nameWithType: NSObject.IsProxy
+  fullName: Foundation.NSObject.IsProxy
+- uid: Foundation.NSObject.RetainCount
+  commentId: P:Foundation.NSObject.RetainCount
+  parent: Foundation.NSObject
+  isExternal: true
+  name: RetainCount
+  nameWithType: NSObject.RetainCount
+  fullName: Foundation.NSObject.RetainCount
+- uid: Foundation.NSObject.Self
+  commentId: P:Foundation.NSObject.Self
+  parent: Foundation.NSObject
+  isExternal: true
+  name: Self
+  nameWithType: NSObject.Self
+  fullName: Foundation.NSObject.Self
+- uid: Foundation.NSObject.Superclass
+  commentId: P:Foundation.NSObject.Superclass
+  parent: Foundation.NSObject
+  isExternal: true
+  name: Superclass
+  nameWithType: NSObject.Superclass
+  fullName: Foundation.NSObject.Superclass
+- uid: Foundation.NSObject.Zone
+  commentId: P:Foundation.NSObject.Zone
+  parent: Foundation.NSObject
+  isExternal: true
+  name: Zone
+  nameWithType: NSObject.Zone
+  fullName: Foundation.NSObject.Zone
+- uid: Foundation.NSObject.ChangeIndexesKey
+  commentId: P:Foundation.NSObject.ChangeIndexesKey
+  parent: Foundation.NSObject
+  isExternal: true
+  name: ChangeIndexesKey
+  nameWithType: NSObject.ChangeIndexesKey
+  fullName: Foundation.NSObject.ChangeIndexesKey
+- uid: Foundation.NSObject.ChangeKindKey
+  commentId: P:Foundation.NSObject.ChangeKindKey
+  parent: Foundation.NSObject
+  isExternal: true
+  name: ChangeKindKey
+  nameWithType: NSObject.ChangeKindKey
+  fullName: Foundation.NSObject.ChangeKindKey
+- uid: Foundation.NSObject.ChangeNewKey
+  commentId: P:Foundation.NSObject.ChangeNewKey
+  parent: Foundation.NSObject
+  isExternal: true
+  name: ChangeNewKey
+  nameWithType: NSObject.ChangeNewKey
+  fullName: Foundation.NSObject.ChangeNewKey
+- uid: Foundation.NSObject.ChangeNotificationIsPriorKey
+  commentId: P:Foundation.NSObject.ChangeNotificationIsPriorKey
+  parent: Foundation.NSObject
+  isExternal: true
+  name: ChangeNotificationIsPriorKey
+  nameWithType: NSObject.ChangeNotificationIsPriorKey
+  fullName: Foundation.NSObject.ChangeNotificationIsPriorKey
+- uid: Foundation.NSObject.ChangeOldKey
+  commentId: P:Foundation.NSObject.ChangeOldKey
+  parent: Foundation.NSObject
+  isExternal: true
+  name: ChangeOldKey
+  nameWithType: NSObject.ChangeOldKey
+  fullName: Foundation.NSObject.ChangeOldKey
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Foundation
+  commentId: N:Foundation
+  isExternal: true
+  name: Foundation
+  nameWithType: Foundation
+  fullName: Foundation
+- uid: UIKit
+  commentId: N:UIKit
+  isExternal: true
+  name: UIKit
+  nameWithType: UIKit
+  fullName: UIKit
+- uid: Microsoft.Maui
+  commentId: N:Microsoft.Maui
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Maui
+  nameWithType: Microsoft.Maui
+  fullName: Microsoft.Maui
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ObjCRuntime
+  commentId: N:ObjCRuntime
+  isExternal: true
+  name: ObjCRuntime
+  nameWithType: ObjCRuntime
+  fullName: ObjCRuntime
+- uid: Microsoft.Maui.Hosting.MauiApp
+  commentId: T:Microsoft.Maui.Hosting.MauiApp
+  parent: Microsoft.Maui.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.hosting.mauiapp
+  name: MauiApp
+  nameWithType: MauiApp
+  fullName: Microsoft.Maui.Hosting.MauiApp
+- uid: Microsoft.Maui.Hosting.MauiApp.CreateBuilder(System.Boolean)
+  commentId: M:Microsoft.Maui.Hosting.MauiApp.CreateBuilder(System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.hosting.mauiapp.createbuilder
+  name: CreateBuilder(bool)
+  nameWithType: MauiApp.CreateBuilder(bool)
+  fullName: Microsoft.Maui.Hosting.MauiApp.CreateBuilder(bool)
+  nameWithType.vb: MauiApp.CreateBuilder(Boolean)
+  fullName.vb: Microsoft.Maui.Hosting.MauiApp.CreateBuilder(Boolean)
+  name.vb: CreateBuilder(Boolean)
+  spec.csharp:
+  - uid: Microsoft.Maui.Hosting.MauiApp.CreateBuilder(System.Boolean)
+    name: CreateBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.hosting.mauiapp.createbuilder
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.Hosting.MauiApp.CreateBuilder(System.Boolean)
+    name: CreateBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.hosting.mauiapp.createbuilder
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Microsoft.Maui.Hosting.MauiAppBuilder
+  commentId: T:Microsoft.Maui.Hosting.MauiAppBuilder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.hosting.mauiappbuilder
+  name: MauiAppBuilder
+  nameWithType: MauiAppBuilder
+  fullName: Microsoft.Maui.Hosting.MauiAppBuilder
+- uid: Microsoft.Maui.Hosting.MauiAppBuilder.Build
+  commentId: M:Microsoft.Maui.Hosting.MauiAppBuilder.Build
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.hosting.mauiappbuilder.build
+  name: Build()
+  nameWithType: MauiAppBuilder.Build()
+  fullName: Microsoft.Maui.Hosting.MauiAppBuilder.Build()
+  spec.csharp:
+  - uid: Microsoft.Maui.Hosting.MauiAppBuilder.Build
+    name: Build
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.hosting.mauiappbuilder.build
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.Hosting.MauiAppBuilder.Build
+    name: Build
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.hosting.mauiappbuilder.build
+  - name: (
+  - name: )
+- uid: Microsoft.Maui.MauiUIApplicationDelegate.CreateMauiApp
+  commentId: M:Microsoft.Maui.MauiUIApplicationDelegate.CreateMauiApp
+  parent: Microsoft.Maui.MauiUIApplicationDelegate
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.createmauiapp
+  name: CreateMauiApp()
+  nameWithType: MauiUIApplicationDelegate.CreateMauiApp()
+  fullName: Microsoft.Maui.MauiUIApplicationDelegate.CreateMauiApp()
+  spec.csharp:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.CreateMauiApp
+    name: CreateMauiApp
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.createmauiapp
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Maui.MauiUIApplicationDelegate.CreateMauiApp
+    name: CreateMauiApp
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.mauiuiapplicationdelegate.createmauiapp
+  - name: (
+  - name: )
+- uid: NfcDemo.AppDelegate.CreateMauiApp*
+  commentId: Overload:NfcDemo.AppDelegate.CreateMauiApp
+  href: NfcDemo.AppDelegate.html#NfcDemo_AppDelegate_CreateMauiApp
+  name: CreateMauiApp
+  nameWithType: AppDelegate.CreateMauiApp
+  fullName: NfcDemo.AppDelegate.CreateMauiApp
+- uid: Microsoft.Maui.Hosting
+  commentId: N:Microsoft.Maui.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Maui.Hosting
+  nameWithType: Microsoft.Maui.Hosting
+  fullName: Microsoft.Maui.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.hosting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Maui
+    name: Maui
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui
+  - name: .
+  - uid: Microsoft.Maui.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.maui.hosting

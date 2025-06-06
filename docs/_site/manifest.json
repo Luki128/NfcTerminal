@@ -1,0 +1,365 @@
+{
+  "source_base_path": "C:/Users/KubaLocal/Documents/Projekty/NFC_test/NfcDemo/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Libs.TLV.TlvObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Libs.TLV.TlvObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Libs.TLV.TlvObject",
+      "Summary": "<p sourcefile=\"api/Libs.TLV.TlvObject.yml\" sourcestartlinenumber=\"1\">Represents a node in a parsed TLV (Tag-Length-Value) structure.\nProvides access to nested TLV elements via an indexer and exposes\nthe value of a primitive TLV element as a hexadecimal string.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Libs.TLV.TlvParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Libs.TLV.TlvParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Libs.TLV.TlvParser",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Libs.TLV.TreePrinter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Libs.TLV.TreePrinter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Libs.TLV.TreePrinter",
+      "Summary": "<p sourcefile=\"api/Libs.TLV.TreePrinter.yml\" sourcestartlinenumber=\"1\">Provides functionality to generate an ASCII-art representation of a tree\nstored in a nested Dictionary&lt;string, object&gt; structure.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Libs.TLV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Libs.TLV.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Libs.TLV",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lin.LinInterpreter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lin.LinInterpreter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lin.LinInterpreter",
+      "Summary": "<p sourcefile=\"api/Lin.LinInterpreter.yml\" sourcestartlinenumber=\"1\">A very small expression‐language interpreter featuring variables, arithmetic/bitwise operators,\nuser‑defined functions and simple control flow constructs (<code>if</code>, <code>for</code>, <code>return</code>).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Lin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Lin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Lin",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.Apdu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.Apdu.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.Apdu",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.App.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.App",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.AppDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.AppDelegate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.AppDelegate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.AppShell.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.AppShell.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.AppShell",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.Lin.LinExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.Lin.LinExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.Lin.LinExtension",
+      "Summary": "<p sourcefile=\"api/NfcDemo.Lin.LinExtension.yml\" sourcestartlinenumber=\"1\">Provides extension functions for the LIN interpreter, including NFC operations and TLV parsing.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.Lin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.Lin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.Lin",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.LinScriptPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.LinScriptPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.LinScriptPage",
+      "Summary": "<p sourcefile=\"api/NfcDemo.LinScriptPage.yml\" sourcestartlinenumber=\"1\">A page that allows users to write and execute LIN scripts, displaying output and interacting with NFC tags.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.LinTerminalPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.LinTerminalPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.LinTerminalPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.MauiProgram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.MauiProgram.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.MauiProgram",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.MessageOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.MessageOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.MessageOptions",
+      "Summary": "<p sourcefile=\"api/NfcDemo.MessageOptions.yml\" sourcestartlinenumber=\"1\">Represents a set of context-specific options presented to the user via an action sheet.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.Program.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.Program",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.TLVPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.TLVPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.TLVPage",
+      "Summary": "<p sourcefile=\"api/NfcDemo.TLVPage.yml\" sourcestartlinenumber=\"1\">Page that parses a TLV-encoded hex string, displays its tree representation,\nand allows copying the tree or JSON representation to the clipboard.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.TerminalPage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.TerminalPage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo.TerminalPage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/NfcDemo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/NfcDemo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "NfcDemo",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "lin_extension.md",
+      "output": {
+        ".html": {
+          "relative_path": "lin_extension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

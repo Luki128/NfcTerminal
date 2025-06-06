@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Lin
+  commentId: N:Lin
+  id: Lin
+  children:
+  - Lin.LinInterpreter
+  langs:
+  - csharp
+  - vb
+  name: Lin
+  nameWithType: Lin
+  fullName: Lin
+  type: Namespace
+  assemblies:
+  - NfcTerminal
+references:
+- uid: Lin.LinInterpreter
+  commentId: T:Lin.LinInterpreter
+  href: Lin.LinInterpreter.html
+  name: LinInterpreter
+  nameWithType: LinInterpreter
+  fullName: Lin.LinInterpreter
