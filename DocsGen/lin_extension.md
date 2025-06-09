@@ -191,11 +191,11 @@ Converts a string representing a number into a 64-bit integer (`Int64`). If only
 * **Example:**
 
   ```lin
-  var x = num("1011", 2)   
+  x = num("1011", 2)   
   // x == 11
-  var y = num("FF", 16)    
+  y = num("FF", 16)    
   // y == 255
-  var z = num("42")        
+  z = num("42")        
   // z == 42 (default base 10)
   ```
 
@@ -268,9 +268,9 @@ Takes a hex-encoded string (possibly containing spaces or hyphens) and decodes i
 * **Example:**
 
   ```lin
-  var text = ascii("48656C6C6F") 
+  text = ascii("48656C6C6F") 
   // "Hello"
-  var name = ascii("4A-6F-68-6E")    
+  name = ascii("4A-6F-68-6E")    
   // "John"
   ```
 
@@ -421,7 +421,7 @@ Parses a hex-encoded TLV (Tag-Length-Value) data stream into a `TlvObject`. You 
 * **Example:**
 
   ```lin
-  var obj = tlv("6F108407A0000000031010A5049F6501FF")
+  obj = tlv("6F108407A0000000031010A5049F6501FF")
   ```
 
   `obj` can now be passed to `tree(obj)` or navigated with `tlv_read`.
@@ -448,7 +448,7 @@ Generates a text-based (ASCII-art) “tree” representation of the TLV hierarch
 * **Example:**
 
   ```lin
-  var obj = tlv("6F108407A0000000031010A5049F6501FF")
+  obj = tlv("6F108407A0000000031010A5049F6501FF")
   print(tree(obj))
   ```
 
