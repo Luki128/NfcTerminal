@@ -5,7 +5,7 @@
 1. **Raw APDU Terminal**  
    Send and receive low-level APDU commands directly to/from an NFC card.
 2. **Lin Interactive Terminal**  
-   A REPL-style interface powered by the custom **Lin** scripting language, letting you send APDU commands, parse responses, and incorporate logic on the fly.  
+   A REPL-style interface powered by the custom **Lin (v [0.1.1](https://github.com/Luki128/Lin-language/releases/tag/0.1.1))** scripting language, letting you send APDU commands, parse responses, and incorporate logic on the fly.  
    > For more information on Lin, see the [Lin-language GitHub repo](https://github.com/Luki128/Lin-language/tree/main).
 3. **Lin Script Builder**  
    A full‐featured script editor where you can compose, and run multi‐line Lin scripts that interact with NFC cards.
