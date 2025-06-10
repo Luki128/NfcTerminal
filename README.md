@@ -1,4 +1,4 @@
-# NFC Demo – Android App
+# NFC Demo – Android App ([Doc page](https://luki128.github.io/NfcTerminal/lin_extension.html))
 
 **NFC Demo** is an Android-only application for experimenting with NFC smart cards. It provides four main “pages” (screens), each tailored to a specific aspect of NFC development and testing:
 
