@@ -1,4 +1,4 @@
-# NFC Demo – Android App
+# NFC Demo – Android App ([Doc page](https://luki128.github.io/NfcTerminal/lin_extension.html))
 
 **NFC Demo** is an Android-only application for experimenting with NFC smart cards. It provides four main “pages” (screens), each tailored to a specific aspect of NFC development and testing:
 
@@ -6,7 +6,7 @@
    Send and receive low-level APDU commands directly to/from an NFC card.
 2. **Lin Interactive Terminal**  
    A REPL-style interface powered by the custom **Lin** scripting language, letting you send APDU commands, parse responses, and incorporate logic on the fly.  
-   > For more information on Lin, see the [Lin-language GitHub repo](https://github.com/Luki128/Lin-language/tree/main).
+   > For more information on Lin, see the [Lin-language GitHub repo](https://luki128.github.io/NfcTerminal/index.html).
 3. **Lin Script Builder**  
    A full‐featured script editor where you can compose, and run multi‐line Lin scripts that interact with NFC cards.
 4. **TLV Parser / Tree Viewer**  
