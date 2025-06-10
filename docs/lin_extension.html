@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/Luki128/NfcTerminal/blob/main/DocsGen/lin_extension.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -214,11 +214,11 @@ Converts a string representing a number into a 64-bit integer (<code>Int64</code
 <code>Int64</code> (the parsed integer value).</p>
 </li>
 <li><p><strong>Example:</strong></p>
-<pre><code class="lang-lin">var x = num(&quot;1011&quot;, 2)   
+<pre><code class="lang-lin">x = num(&quot;1011&quot;, 2)   
 // x == 11
-var y = num(&quot;FF&quot;, 16)    
+y = num(&quot;FF&quot;, 16)    
 // y == 255
-var z = num(&quot;42&quot;)        
+z = num(&quot;42&quot;)        
 // z == 42 (default base 10)
 </code></pre>
 </li>
@@ -282,9 +282,9 @@ Takes a hex-encoded string (possibly containing spaces or hyphens) and decodes i
 <code>string</code> (decoded ASCII text).</p>
 </li>
 <li><p><strong>Example:</strong></p>
-<pre><code class="lang-lin">var text = ascii(&quot;48656C6C6F&quot;) 
+<pre><code class="lang-lin">text = ascii(&quot;48656C6C6F&quot;) 
 // &quot;Hello&quot;
-var name = ascii(&quot;4A-6F-68-6E&quot;)    
+name = ascii(&quot;4A-6F-68-6E&quot;)    
 // &quot;John&quot;
 </code></pre>
 </li>
@@ -409,7 +409,7 @@ Parses a hex-encoded TLV (Tag-Length-Value) data stream into a <code>TlvObject</
 <code>TlvObject</code> – a hierarchical representation of parsed TLV.</p>
 </li>
 <li><p><strong>Example:</strong></p>
-<pre><code class="lang-lin">var obj = tlv(&quot;6F108407A0000000031010A5049F6501FF&quot;)
+<pre><code class="lang-lin">obj = tlv(&quot;6F108407A0000000031010A5049F6501FF&quot;)
 </code></pre>
 <p><code>obj</code> can now be passed to <code>tree(obj)</code> or navigated with <code>tlv_read</code>.</p>
 </li>
@@ -429,7 +429,7 @@ Generates a text-based (ASCII-art) “tree” representation of the TLV hierarch
 <code>string</code> – multi-line ASCII tree (with branches and indentation).</p>
 </li>
 <li><p><strong>Example:</strong></p>
-<pre><code class="lang-lin">var obj = tlv(&quot;6F108407A0000000031010A5049F6501FF&quot;)
+<pre><code class="lang-lin">obj = tlv(&quot;6F108407A0000000031010A5049F6501FF&quot;)
 print(tree(obj))
 </code></pre>
 <p>Might output something like:</p>
@@ -510,6 +510,7 @@ printc(&quot;#00FF00&quot;, &quot;Success code:&quot;, apduResult)
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/Luki128/NfcTerminal/blob/main/DocsGen/lin_extension.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

@@ -109,3 +109,10 @@ This project is released under the MIT License. Contributions are welcome:
 - Report issues or feature requests via Issues on GitHub.  
 
 Enjoy experimenting with NFC, APDUs, Lin scripting, and TLV parsing!  
+
+## Used Free incos
+
+[terminal](https://freeicons.io/apps-&-programming-2/applications-and-programming-application-coding-terminal-icon-41762)
+[cdoing](https://freeicons.io/apps-&-programming-2/applications-and-programming-application-coding-web-code-write-icon-41764)
+[tree](https://freeicons.io/interface-v.2/hierarchy-organized-diagram-structure-icon-105862)
+[nfc](https://freeicons.io/payment-icon-set-35662/nfc-contactless-card-payment-mobile-banking-icon-1431369)

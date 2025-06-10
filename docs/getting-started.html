@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Getting Started | NfcTerminal </title>
+      <title>Getting Started - examle on EMV expired card | NfcTerminal </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Getting Started | NfcTerminal ">
+      <meta name="title" content="Getting Started - examle on EMV expired card | NfcTerminal ">
       
       
       <link rel="icon" href="favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="">
       
       
-      
+      <meta name="docfx:docurl" content="https://github.com/Luki128/NfcTerminal/blob/main/DocsGen/getting-started.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -71,12 +71,41 @@
         </div>
 
         <article data-uid="">
-<h1 id="getting-started">Getting Started</h1>
+<h1 id="getting-started---examle-on-emv-expired-card">Getting Started - examle on EMV expired card</h1>
 
+<p>The app starts on the Terminal page. Here, you can send raw APDU commands in hex. <br>
+<img src="img/im1.jpg" height="600" style="height: 600px;"> <br>
+The default command in the field (00 A4 04 00 0E 31 50 41 59 2E 53 59 53 2E 44 44 46 30 31 00) is a SELECT by Name command for '2PAY.SYS.DDF01'. <br>
+<img src="img/im2.jpg" height="600" style="height: 600px;"> <br>
+When the card is detected, a green message notifies you about it. <br>
+<img src="img/im3.jpg" height="600" style="height: 600px;"> <br>
+After placing the card near the phone and keeping it there until the notification appears, you can send a command. The response includes two parts: the SW (Status Word) and the Data, both in hexadecimal format. The SW indicates the response status from the card. For example, in this case, a value of 90XX means that the selected file exists and was successfully selected. <br>
+<img src="img/im4.jpg" height="600" style="height: 600px;"> <br>
+You can use a single tap gesture on the message in the Terminal to see possible options. <br>
+<img src="img/im5.jpg" height="600" style="height: 600px;"> <br>
+Command messages and responses have different options. In the response, you can additionally copy only a part of the data or try to parse the response data as a TLV tree. <br>
+<img src="img/im6.jpg" height="600" style="height: 600px;"> <br>
+If you choose to parse the TLV, the app automatically navigates to this page and shows the result (if the data is valid). From here, you can modify the input, copy the output from the field below, or use one of the two buttons: 'Copy Tree', which copies the tree as displayed in the box below, or 'Copy JSON', which copies the tree in JSON format. <br>
+<img src="img/im11.jpg" height="600" style="height: 600px;"> <br>
+If the given hex data fails during tree parsing, you'll see an error message instead of the tree. The message will try to explain what might be wrong. <br>
+<img src="img/im7.jpg" height="600" style="height: 600px;"> <br>
+Using the snackbar, you can navigate through all four pages. <br>
+<img src="img/im8.jpg" height="600" style="height: 600px;"> <br>
+Let's navigate to the LIN Terminal. From here, you can also communicate with the card using the scripting language 'LIN' (<a href="https://github.com/Luki128/Lin-language/blob/main/README.md">see LIN</a>) in the interactive console. <br>
+<img src="img/im9.jpg" height="600" style="height: 600px;"> <br>
+Here, you get the same default command, but written in LIN. Messages about card detection also appear here. <br>
+<img src="img/im10.jpg" height="600" style="height: 600px;"> <br>
+Card detection works the same on all three pages. There's no specific disconnect message — but if the card is out of range or communication is interrupted, you'll see a message when you try to send something to the card <br>
+<img src="img/im13.jpg" height="600" style="height: 600px;"> <br>
+Let's move to the LIN Script page. Here, you can develop multi-line scripts using the LIN language. A new error message might appear, as shown below. This usually means the card isn’t connected — or that it was never connected during the current session. Later, you may see a standard error instead. \</p>
+<p><img src="img/im14.jpg" height="600" style="height: 600px;"> <br>
+The code file includes an example LIN script. This script tries to read log files from an EMV card and display the transaction date and value. The script ends with an error, but that's expected because not all log files may exist or the card may not grant access to them. <br>
+You can modify the script, re-run it, and have fun! (P.S. There's a function to highlight the line where the error occurred, but it's not fully implemented yet—so don't rely on it too much.)</p>
 
 </article>
 
         <div class="contribution d-print-none">
+          <a href="https://github.com/Luki128/NfcTerminal/blob/main/DocsGen/getting-started.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
