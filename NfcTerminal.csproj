@@ -12,10 +12,10 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>NfcDemo</ApplicationTitle>
+		<ApplicationTitle>NfcTerminal</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.nfcdemo</ApplicationId>
+		<ApplicationId>com.opensource.nfcterminal</ApplicationId>
 		<ApplicationIdGuid>1bc5828b-5d72-44b6-8cef-7b8fd0906957</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -38,9 +38,9 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" />
-		<MauiIcon Include="Resources\AppIcon\appiconfg.svg" />
-		<MauiIcon Include="Resources\AppIcon\icon.png" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#4FC3F7" />
+		
+		
+		<MauiIcon Include="Resources\AppIcon\appicon.png" Color="#4FC3F7" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.png" Color="#4FC3F7" BaseSize="128,128" />
